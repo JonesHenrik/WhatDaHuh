@@ -18,6 +18,7 @@
 		587C1DB02E3AB71400F50B7F /* BadgeGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587C1DAF2E3AB71400F50B7F /* BadgeGridView.swift */; };
 		587C1DB22E3AB71C00F50B7F /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587C1DB12E3AB71C00F50B7F /* BadgeView.swift */; };
 		587C1DB72E3AB9EE00F50B7F /* BadgeBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587C1DB62E3AB9EE00F50B7F /* BadgeBank.swift */; };
+		587EC3972E3D26210010A7F3 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587EC3962E3D26210010A7F3 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		587C1DAF2E3AB71400F50B7F /* BadgeGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeGridView.swift; sourceTree = "<group>"; };
 		587C1DB12E3AB71C00F50B7F /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
 		587C1DB62E3AB9EE00F50B7F /* BadgeBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeBank.swift; sourceTree = "<group>"; };
+		587EC3962E3D26210010A7F3 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				587C1DA92E3AB62200F50B7F /* WordBank.swift */,
 				587C1DB62E3AB9EE00F50B7F /* BadgeBank.swift */,
 				587C1D9E2E3AB58B00F50B7F /* ContentView.swift */,
+				587EC3982E3D26290010A7F3 /* ViewModel */,
 				587C1DB52E3AB74600F50B7F /* BadgeViews */,
 				587C1DB32E3AB72A00F50B7F /* WordViews */,
 				587C1DA72E3AB59000F50B7F /* Models */,
@@ -102,6 +105,14 @@
 				587C1DB12E3AB71C00F50B7F /* BadgeView.swift */,
 			);
 			path = BadgeViews;
+			sourceTree = "<group>";
+		};
+		587EC3982E3D26290010A7F3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				587EC3962E3D26210010A7F3 /* ViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +190,7 @@
 				587C1DA32E3AB58B00F50B7F /* Badge.swift in Sources */,
 				587C1DA42E3AB58B00F50B7F /* ContentView.swift in Sources */,
 				587C1DB02E3AB71400F50B7F /* BadgeGridView.swift in Sources */,
+				587EC3972E3D26210010A7F3 /* ViewModel.swift in Sources */,
 				587C1DB72E3AB9EE00F50B7F /* BadgeBank.swift in Sources */,
 				587C1DAE2E3AB70000F50B7F /* WordView.swift in Sources */,
 				587C1DA52E3AB58B00F50B7F /* WhatDaHuhApp.swift in Sources */,
