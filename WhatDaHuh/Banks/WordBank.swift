@@ -1079,39 +1079,529 @@ let wordBank: [Word] = [
         isLowkeyGem: false,
         isUnlocked: false
     ),
+    Word (
+        title: "podium",
+        wordClass: "verb",
+        phoneticSpelling: "poʊ.di.əm",
+        definitions: [
+            "to dominate a conversation or discussion"
+        ],
+        phrases: [
+            "During the debate, Sarah completely took over the discussion and stood on the podium, asserting her opinions confidently.",
+            "Bro got on the podium in the group chat and started calling everyone out."
+        ],
+        badge: sampleBadge,
+        isLowkeyGem: false,
+        isUnlocked: false
+    ),
+    Word(
+        title: "clock it",
+        wordClass: "verb",
+        phoneticSpelling: "/klɒk ɪt/",
+        definitions: [
+            "to notice or ”realize something"
+        ],
+        phrases: [
+            "Its not clocking to you that I am standing on business .",
+            "Did you clock it? She was totally hinting she’s leaving the group."
+        ],
+        badge: sampleBadge,
+        isLowkeyGem: false,
+        isUnlocked: false
+    ),
+    Word(
+        title: "type shit",
+        wordClass: "verb",
+        phoneticSpelling: "/taɪp ʃɪt/",
+        definitions: [
+            "Used to emphasize a statement, vibe, or situation. It’s often thrown at the end of a sentence"
+        ],
+        phrases: [
+            "We’re just chilling, playing games, type shit.” (we’re just hanging out, that kind of thing).",
+            "She said she’s done with him, type shit.” (exactly that kind of situation)"
+        ],
+        badge: sampleBadge,
+        isLowkeyGem: false,
+        isUnlocked: false
+    ),
+    Word(
+        title: "ton fonem grave",
+        wordClass: "Phrase",
+        phoneticSpelling: "on-foe-nem- grave",
+        definitions: [
+            "A strong oath or swear meaning “I swear on my homies’ graves” — used to express that you’re telling the truth or being dead serious"
+        ],
+        phrases: [
+            "I ain’t lying, on fonem grave.” (I swear I’m telling the truth)",
+            "On fonem grave, we really pulled up last night.” (I promise that really happened)"
+        ],
+        badge: sampleBadge,
+        isLowkeyGem: false,
+        isUnlocked: false
+    ),
+    Word(
+        title: "performative male",
+        wordClass: "Noun phrase",
+        phoneticSpelling: "/pər‑FÔR‑mə‑tiv mayl/",
+        definitions: [
+            "A guy who acts in an exaggerated way to show off traits he thinks will make him look more masculine, attractive, or morally superior often in front of others or online. The performance isn’t necessarily genuine; it’s about signaling rather than sincerity. "
+        ],
+        phrases: [
+            "He’s posting about women’s rights but treats his girlfriend like trash—performative male behavior.",
+            "Bro buying flowers for his girlfriend and making sure Instagram sees it? That’s performative male 101."
+        ],
+        badge: sampleBadge,
+        isLowkeyGem: false,
+        isUnlocked: false
+    ),
+    Word (
+        title: "gen z stare",
+        wordClass: "Noun phrase",
+        phoneticSpelling: "/pər‑FÔR‑mə‑tiv mayl/",
+        definitions: [
+            "A long, blank, emotionless look often used by Gen Z in awkward, absurd, or cringe situations."
+        ],
+        phrases: [
+            "He said pineapple doesn’t belong on pizza… Gen Z stare.",
+            "Boss: You’re like family here. Me: Gen Z stare."
+        ],
+        badge: sampleBadge,
+        isLowkeyGem: false,
+        isUnlocked: false
+    ),
+    Word(
+        title: "millennial pause",
+        wordClass: "Noun phrase",
+        phoneticSpelling: "/mɪ‑LEN‑ē‑əl pawz/",
+        definitions: [
+            "The brief moment of silence or hesitation at the start of a video before someone begins speaking — common among Millennials who grew up in the pre-smartphone era and are used to waiting for a camera to start recording."
+        ],
+        phrases: [
+            "That awkward two seconds before you say hi on camera… millennial pause energy."
+        ],
+        badge: sampleBadge,
+        isLowkeyGem: false,
+        isUnlocked: false
+    ),
+    Word (
+        title: "disney adult",
+        wordClass: "Noun phrase",
+        phoneticSpelling: "/DIZ‑nee uh‑dult/",
+        definitions: [
+            "An adult who is extremely obsessed with Disney — often visiting Disney parks regularly, collecting merch, wearing themed outfits, and structuring vacations or social life around Disney experiences"
+        ],
+        phrases: [
+            "She’s a full Disney adult — she has annual passes to both parks.",
+            "We can’t go anywhere without her bringing up Disneyland… total Disney adult."
+        ],
+        badge: sampleBadge,
+        isLowkeyGem: false,
+        isUnlocked: false,
+    ),
+    Word (
+        title: "aura / aura farming",
+        wordClass: "Noun phrase",
+        phoneticSpelling: "/DIZ‑nee uh‑dult/",
+        definitions: [
+            "An adult who is extremely obsessed with Disney — often visiting Disney parks regularly, collecting merch, wearing themed outfits, and structuring vacations or social life around Disney experiences"
+        ],
+        phrases: [
+            "She’s a full Disney adult — she has annual passes to both parks.",
+            "We can’t go anywhere without her bringing up Disneyland… total Disney adult."
+        ],
+        badge: sampleBadge,
+        isLowkeyGem: false,
+        isUnlocked: false
+    ),
+    Word (
+        title: "farming",
+        wordClass: "Verb",
+        phoneticSpelling: "/FAR‑ming/",
+        definitions: [
+            "Originally from video games, where farming means repeatedly doing an action to collect resources, XP, or loot. In Gen Z slang, it’s used more broadly to mean actively working to gain or collect something in large amounts, whether that’s attention, clout, money, followers, or aesthetic vibes."
+        ],
+        phrases: [
+            "He’s been farming followers with those thirst traps.",
+            "Spent all night farming gold in the game."
+        ],
+        badge: sampleBadge,
+        isLowkeyGem: false,
+        isUnlocked: false,
+    ),
+    Word (
+        title: "maxxing",
+        wordClass: "Verb",
+        phoneticSpelling: "/MAK‑sing/",
+        definitions: [
+            "Taken from online “grindset” and self‑optimization communities, maxxxing means pushing something to its extreme potential “maximizing” it."
+        ],
+        phrases: [
+            "He’s been gymmaxxing all summer — dude’s huge now.",
+            "Skincare routine? I’m looksmaxxing hard rn."
+        ],
+        badge: sampleBadge,
+        isLowkeyGem: false,
+        isUnlocked: false,
+    ),
+    Word(
+        title: "chopped",
+        wordClass: "adjective",
+        phoneticSpelling: "/CHAHPT/",
+        definitions: [
+            "ugly, busted, low‑quality, or not looking good. Can refer to a person’s face, outfit, style, or even a vibe that’s off"
+        ],
+        phrases: [
+            "His haircut is chopped.",
+            "Outfit kinda chopped, ngl."
+        ],
+        badge: sampleBadge,
+        isLowkeyGem: false,
+        isUnlocked: false
+    ),
+    Word (
+        title: "chopped chin",
+        wordClass: "noun phrase",
+        phoneticSpelling: "/CHAHPT CHIN/",
+        definitions: [
+            "A more specific roast targeting someone’s facial structure, implying their chin looks awkward, small, uneven, or just unattractive"
+        ],
+        phrases: [
+            "Lmao bro got that chopped chin.",
+            "Not her coming for me with that chopped chin."
+        ],
+        badge: sampleBadge,
+        isLowkeyGem: false,
+        isUnlocked: false
+    ),
+    Word(
+         title: "chopped shyt",
+         wordClass: "noun phrase",
+         phoneticSpelling: "/CHAHPT SHIT/",
+         definitions: [
+            "Means something is completely busted, ugly, or terrible in quality. Can describe a look, outfit, face, or even an idea. Stronger than just “chopped” — emphasizes that it’s really bad."
+         ],
+         phrases: [
+            "That’s some chopped shyt outfit right there.",
+            "His car is chopped shyt, I swear."
+         ],
+         badge: sampleBadge,
+         isLowkeyGem: false,
+         isUnlocked: false
+    ),
+    Word(
+        title: "huzz",
+        wordClass: "noun",
+        phoneticSpelling: "/hʌz/",
+        definitions: [
+            "A stylized version of the word “hoes”—used to refer to women, usually in a derogatory or objectifying way"
+        ],
+        phrases: [
+            "He’ll do anything for the huzz.",
+            "“Where the huzz at?” (asking where the girls are)"
+        ],
+        badge: sampleBadge,
+        isLowkeyGem: false,
+        isUnlocked: false
+    ),
+    Word(
+        title: "bruzz",
+        wordClass: "noun",
+        phoneticSpelling: "Bruh-zzz",
+        definitions: [
+            "Refers to a group of male friends “bros."
+        ],
+        phrases: [
+            "The bruzz are pulling up later.",
+            "Just chilling with the bruzz."
+        ],
+        badge: sampleBadge,
+        isLowkeyGem: false,
+        isUnlocked: false
+    ),
+    Word(
+        title: "chuzz",
+        wordClass: "noun",
+        phoneticSpelling: "ch-uz",
+        definitions: [
+            "Short for “chopped huzz,” used to insult someone (typically a woman) as unattractive or “ugly huzz.” The term is derogatory and often body‑shaming"
+        ],
+        phrases: [
+            "Bro labeled her the chuzz of the party.",
+            "She’s basically the chuzz of the group."
+        ],
+        badge: sampleBadge,
+        isLowkeyGem: false,
+        isUnlocked: false
+    ),
+    Word(
+        title: "torta",
+        wordClass: "noun",
+        phoneticSpelling: "/TOR‑tah/",
+        definitions: [
+            "In Mexican and Chicano slang, torta literally means “sandwich” (specifically a Mexican sandwich on a telera or bolillo roll). But as slang, it’s often used playfully — or insultingly — to describe someone (often a woman) as chubby, thick, or big‑bodied."
+        ],
+        phrases: [
+           "She’s a baddie, lil torta.",
+           "She’s built like a torta."
+        ],
+        badge: sampleBadge,
+        isLowkeyGem: false,
+        isUnlocked: false
+    ),
+    Word(
+        title: "pmo",
+        wordClass: "Acronym",
+        phoneticSpelling: "p-m-o",
+        definitions: [
+            "piss me off"
+        ],
+        phrases: [
+            "This line PMO",
+            "don't piss me off"
+        ],
+        badge: sampleBadge,
+        isLowkeyGem: false,
+        isUnlocked: false
+    ),
+    Word(
+        title: "SDIYBT",
+        wordClass: "Acronym",
+        phoneticSpelling: "s-d-i-y-b-t",
+        definitions: [
+            "based on a viral SpongeBob meme edit featuring a robot SpongeBob telling Plankton that exact phrase"
+        ],
+        phrases: [
+            "SDIYBT, fam.",
+            "He said ‘start digging in yo butt, twin’—so you know SDIYBT is next level."
+        ],
+        badge: sampleBadge,
+        isLowkeyGem: false,
+        isUnlocked: false
+    ),
+    Word(
+        title: "SYBAU",
+        wordClass: "Acronym",
+        phoneticSpelling: "s-y-b-a-u",
+        definitions: [
+            "shut your bitch ass up"
+        ],
+        phrases: [
+            "SYBAU, nobody asked.",
+            "Girl… SYBAU please."
+        ],
+        badge: sampleBadge,
+        isLowkeyGem: false,
+        isUnlocked: false
+    ),
+    Word(
+        title: "aah",
+        wordClass: "Interjection",
+        phoneticSpelling: "ahhhh",
+        definitions: [
+            "A drawn-out expression of realization, mild frustration, or emotional reaction—often written when someone suddenly gets a point or reacts emotionally"
+        ],
+        phrases: [
+            "Aah, that’s what you meant.",
+            "Aah, lowkey feels good to finally understand."
+        ],
+        badge: sampleBadge,
+        isLowkeyGem: false,
+        isUnlocked: false
+    ),
+    Word(
+        title: "67",
+        wordClass: "verb",
+        phoneticSpelling: "sixty seven",
+        definitions: [
+            "Agreement or enthusiasm: Used like “yes,” “I agree,” or “lit” to hype something up"
+        ],
+        phrases: [
+            "That beat? Totally 67.",
+            "Commenters kept spamming 67 under that video."
+        ],
+        badge: sampleBadge,
+        isLowkeyGem: false,
+        isUnlocked: false
+    ),
+    
+    Word(
+        title: "sigma",
+        wordClass: "noun",
+        phoneticSpelling: "sig-muh",
+        definitions: [
+            "A so‑called “lone wolf” male archetype — independent, confident, mysterious, and successful without needing social dominance or validation from others"
+        ],
+        phrases: [
+            "He’s not trying to be in the spotlight — total sigma.",
+            "Sigma rule #45: Don’t chase, attract."
+        ],
+        badge: sampleBadge,
+        isLowkeyGem: false,
+        isUnlocked: false
+    ),
+    Word(
+        title: "alpha",
+        wordClass: "noun",
+        phoneticSpelling: "al-pha",
+        definitions: [
+            "The “top dog” male in a social hierarchy — assertive, dominant, confident, and a natural leader. Popularized from pseudo‑science about animal behavior (wolf pack theory) and later applied to dating and social dynamics"
+        ],
+        phrases: [
+            "He walked in and took control of the room — alpha vibes.",
+            "Alpha male energy: ordering for the whole table without asking."
+            
+        ],
+        badge: sampleBadge,
+        isLowkeyGem: false,
+        isUnlocked: false
+    ),
+    Word(
+        title: "high value man",
+        wordClass: "noun",
+        phoneticSpelling: "high value man",
+        definitions: [
+            "A man who is seen as desirable in dating/relationship contexts because of his wealth, status, looks, confidence, and/or charisma"
+        ],
+        phrases: [
+            "A high‑value man doesn’t chase — he attracts.",
+            "They said I need to be a high‑value man before dating again."
+            
+        ],
+        badge: sampleBadge,
+        isLowkeyGem: false,
+        isUnlocked: false
+        ),
+    
+    Word(
+        title: "aston hall",
+        wordClass: "noun",
+        phoneticSpelling: "high value man",
+        definitions: [
+            "Refers to the meme persona of a fitness influencer known for elite-tier “grindset” lifestyle routines—particularly his viral early-morning regimen featuring mouth taping, multiple ice-water dunk cycles with Saratoga water, banana peel skin rubs, journaling, and high-structure scheduling. The term is used to describe someone who over-performs wellness rituals in a way that feels more performative than practical"
+        ],
+        phrases: [
+            "He posted a full breakfast full of banana peels and ice bowl clips—peak Ashton Hall energy.",
+            "That guy journaling at 4 am? He laying the Ashton Hall."
+            
+        ],
+        badge: sampleBadge,
+        isLowkeyGem: false,
+        isUnlocked: false
+        ),
+    Word(
+        title: "chat",
+        wordClass: "noun",
+        phoneticSpelling: "chat",
+        definitions: [
+            "Originally just meaning “conversation,” but in online/Gen Z slang—especially from Twitch, YouTube livestreams, and TikTok—it refers to the live audience watching and commenting. Streamers will address their viewers collectively as “chat.",
+            
+           "Outside of livestreaming, it can also be used jokingly to refer to your imaginary audience in everyday conversation, like you’re narrating to a livestream."
+        ],
+        phrases: [
+            "Chat, we are so cooked right now.",
+            "Not me talking to my friends like they’re chat"
+            
+        ],
+        badge: sampleBadge,
+        isLowkeyGem: false,
+        isUnlocked: false
+        ),
+    Word(
+        title: "big back",
+        wordClass: "noun",
+        phoneticSpelling: "big back",
+        definitions: [
+            "A roast or insult implying someone has a large, wide, or broad back—often as a way to call them built, stocky, or unattractively bulky. Can also be a body‑shaming jab aimed at someone’s physique, especially women, though it’s also thrown around jokingly between friends."
+        ],
+        phrases: [
+            "Not her walking in with that big back energy.",
+            "He been hitting back day for real, big back on him."
+            
+        ],
+        badge: sampleBadge,
+        isLowkeyGem: false,
+        isUnlocked: false
+        ),
+    
+    Word(
+        title: "penjamin franklin",
+        wordClass: "noun",
+        phoneticSpelling: "pen jah min - frank-lin",
+        definitions: [
+            "The term 'Penjamin' refers to a type of vape pen that is designed to look and function like a regular pen. It is a combination of the words 'pen' and 'Benjamin,' with 'Benjamin' referencing the slang term for a hundred-dollar bill, suggesting high value and quality"
+        ],
+        phrases: [
+            "Pass the Penjamin, I need a hit.",
+            "Got my Penjamin Franklin for the party tonight."
+            
+        ],
+        badge: sampleBadge,
+        isLowkeyGem: false,
+        isUnlocked: false
+        ),
+    Word(
+        title: "lip pillows",
+        wordClass: "noun",
+        phoneticSpelling: "lip-pill-ows",
+        definitions: [
+            "A playful or sarcastic way to refer to plump, full, often over‑filled lips, usually from cosmetic lip fillers or injections"
+        ],
+        phrases: [
+            "Her lip pillows are popping today.",
+            "Too much filler — those lip pillows ain’t natural."
+            
+        ],
+        badge: sampleBadge,
+        isLowkeyGem: false,
+        isUnlocked: false
+        ),
+    Word(
+        title: "Zynbabwe",
+        wordClass: "noun",
+        phoneticSpelling: "Zyn-Bob-way",
+        definitions: [
+            "A playful slang term for Zyn nicotine pouches—a popular smokeless nicotine product. The word blends “Zyn” (the brand) with “Zimbabwe” for humorous effect and is used mainly among users or enthusiasts talking about the product or its effects."
+        ],
+        phrases: [
+            "pass me a Zynbabwe",
+            "let me get dat zynbabwe..."
+            
+        ],
+        badge: sampleBadge,
+        isLowkeyGem: false,
+        isUnlocked: false
+        ),
+    
+    Word(
+        title: "cart brain",
+        wordClass: "noun",
+        phoneticSpelling: "cart brain",
+        definitions: [
+            "when a persons thinking is so slow from hitting carts"
+        ],
+        phrases: [
+            "Bro went full cart brain today, forgot his own birthday.",
+            "I’m on cart brain hours, can’t focus at all."
+            
+        ],
+        badge: sampleBadge,
+        isLowkeyGem: false,
+        isUnlocked: false
+        ),
+    
+    Word(
+        title: "imaginationship",
+        wordClass: "noun",
+        phoneticSpelling: "imagin-nation-ship",
+        definitions: [
+            "A relationship that exists mainly in one’s imagination—often between celebrities, fictional characters, or crushes that someone fantasizes about but isn’t real or hasn’t happened"
+        ],
+        phrases: [
+            "My imaginationship with that K‑pop idol is thriving.",
+            "She’s stuck in her imaginationship again, texting a celeb who doesn’t even know she exists."
+            
+        ],
+        badge: sampleBadge,
+        isLowkeyGem: false,
+        isUnlocked: false)
 ]
-
-// Not Included words
-/*
- - podium
- - clock it
- - type shit
- - on fonem grave
- - labubu
- - performative male
- - gen z stare
- - millennial pause
- - disney adult
- - aura / aura farming
- - farming
- - maxxing
- - chopped / chopped chin / chopped shyt
- - huzz, chuzz, dihh, bruzz
- - torta ?
- - ts, pmo, sdiybt, sybau
- - aah, 67
- - sigma, alpha, high value man
- - ashton hall
- - chat
- - big back
- - fien
- - penjamin franklin
- - lip pillows
- - zynbabwe
- - cart brain
- - honey pack
- - imaginationship
- boots
- wig
- Maria doing everything above
- */
