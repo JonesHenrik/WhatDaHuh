@@ -11,10 +11,12 @@ struct Word {
     let id = UUID()
     var title: String
     var wordClass: String
+    var phoneticSpelling: String
     var definitions: [String]
     var phrases: [String]
     var badge: Badge
-    var date: Date
+    var date = Date.now
     // rare in UI should appear as 'lowkey gem'
-    var isRare: Bool
+    var isLowkeyGem: Bool
+    var isUnlocked: Bool
 }

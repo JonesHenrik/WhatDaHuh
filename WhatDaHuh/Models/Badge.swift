@@ -11,5 +11,7 @@ import SwiftUI
 struct Badge {
     var title: String
     var image: Image
-    var words: [Word]
+    var words: [String]
 }
+
+var sampleBadge = Badge(title: "Sample", image: Image(.sample), words: ["rizz", "no cap"])

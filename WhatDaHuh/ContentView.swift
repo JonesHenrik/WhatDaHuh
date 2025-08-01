@@ -23,6 +23,9 @@ struct ContentView: View {
                         Image(systemName: "medal")
                     }
                 }
+                .onAppear {
+                    print(wordBank.count)
+                }
         }
     }
 }
