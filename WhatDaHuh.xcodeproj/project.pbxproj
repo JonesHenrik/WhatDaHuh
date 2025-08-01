@@ -19,6 +19,11 @@
 		587C1DB22E3AB71C00F50B7F /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587C1DB12E3AB71C00F50B7F /* BadgeView.swift */; };
 		587C1DB72E3AB9EE00F50B7F /* BadgeBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587C1DB62E3AB9EE00F50B7F /* BadgeBank.swift */; };
 		587EC3972E3D26210010A7F3 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587EC3962E3D26210010A7F3 /* ViewModel.swift */; };
+		587EC39D2E3D28690010A7F3 /* ContentViewMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587EC39C2E3D28690010A7F3 /* ContentViewMethods.swift */; };
+		587EC3A02E3D28CC0010A7F3 /* BadgeGridMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587EC39F2E3D28CC0010A7F3 /* BadgeGridMethods.swift */; };
+		587EC3A42E3D28FC0010A7F3 /* BadgeMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587EC3A32E3D28FC0010A7F3 /* BadgeMethods.swift */; };
+		587EC3A92E3D296E0010A7F3 /* WordMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587EC3A82E3D296E0010A7F3 /* WordMethods.swift */; };
+		587EC3AC2E3D29850010A7F3 /* WordListMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587EC3AB2E3D29850010A7F3 /* WordListMethods.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +40,11 @@
 		587C1DB12E3AB71C00F50B7F /* BadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
 		587C1DB62E3AB9EE00F50B7F /* BadgeBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeBank.swift; sourceTree = "<group>"; };
 		587EC3962E3D26210010A7F3 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		587EC39C2E3D28690010A7F3 /* ContentViewMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewMethods.swift; sourceTree = "<group>"; };
+		587EC39F2E3D28CC0010A7F3 /* BadgeGridMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeGridMethods.swift; sourceTree = "<group>"; };
+		587EC3A32E3D28FC0010A7F3 /* BadgeMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeMethods.swift; sourceTree = "<group>"; };
+		587EC3A82E3D296E0010A7F3 /* WordMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordMethods.swift; sourceTree = "<group>"; };
+		587EC3AB2E3D29850010A7F3 /* WordListMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListMethods.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,12 +78,13 @@
 			isa = PBXGroup;
 			children = (
 				587C1D9C2E3AB58B00F50B7F /* Assets.xcassets */,
-				587C1DA92E3AB62200F50B7F /* WordBank.swift */,
-				587C1DB62E3AB9EE00F50B7F /* BadgeBank.swift */,
-				587C1D9E2E3AB58B00F50B7F /* ContentView.swift */,
+				587EC3AA2E3D29760010A7F3 /* WordListView */,
+				587EC3A72E3D29610010A7F3 /* WordView */,
+				587EC3A62E3D29240010A7F3 /* Banks */,
+				587EC3A22E3D28EB0010A7F3 /* BadgeView */,
+				587EC39E2E3D28B40010A7F3 /* BadgeGrid */,
+				587EC39B2E3D27DE0010A7F3 /* ContentView */,
 				587EC3982E3D26290010A7F3 /* ViewModel */,
-				587C1DB52E3AB74600F50B7F /* BadgeViews */,
-				587C1DB32E3AB72A00F50B7F /* WordViews */,
 				587C1DA72E3AB59000F50B7F /* Models */,
 				587C1D9F2E3AB58B00F50B7F /* WhatDaHuhApp.swift */,
 			);
@@ -89,30 +100,66 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		587C1DB32E3AB72A00F50B7F /* WordViews */ = {
-			isa = PBXGroup;
-			children = (
-				587C1DAD2E3AB70000F50B7F /* WordView.swift */,
-				587C1DAB2E3AB6EF00F50B7F /* WordListView.swift */,
-			);
-			path = WordViews;
-			sourceTree = "<group>";
-		};
-		587C1DB52E3AB74600F50B7F /* BadgeViews */ = {
-			isa = PBXGroup;
-			children = (
-				587C1DAF2E3AB71400F50B7F /* BadgeGridView.swift */,
-				587C1DB12E3AB71C00F50B7F /* BadgeView.swift */,
-			);
-			path = BadgeViews;
-			sourceTree = "<group>";
-		};
 		587EC3982E3D26290010A7F3 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				587EC3962E3D26210010A7F3 /* ViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		587EC39B2E3D27DE0010A7F3 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				587C1D9E2E3AB58B00F50B7F /* ContentView.swift */,
+				587EC39C2E3D28690010A7F3 /* ContentViewMethods.swift */,
+			);
+			path = ContentView;
+			sourceTree = "<group>";
+		};
+		587EC39E2E3D28B40010A7F3 /* BadgeGrid */ = {
+			isa = PBXGroup;
+			children = (
+				587C1DAF2E3AB71400F50B7F /* BadgeGridView.swift */,
+				587EC39F2E3D28CC0010A7F3 /* BadgeGridMethods.swift */,
+			);
+			path = BadgeGrid;
+			sourceTree = "<group>";
+		};
+		587EC3A22E3D28EB0010A7F3 /* BadgeView */ = {
+			isa = PBXGroup;
+			children = (
+				587C1DB12E3AB71C00F50B7F /* BadgeView.swift */,
+				587EC3A32E3D28FC0010A7F3 /* BadgeMethods.swift */,
+			);
+			path = BadgeView;
+			sourceTree = "<group>";
+		};
+		587EC3A62E3D29240010A7F3 /* Banks */ = {
+			isa = PBXGroup;
+			children = (
+				587C1DA92E3AB62200F50B7F /* WordBank.swift */,
+				587C1DB62E3AB9EE00F50B7F /* BadgeBank.swift */,
+			);
+			path = Banks;
+			sourceTree = "<group>";
+		};
+		587EC3A72E3D29610010A7F3 /* WordView */ = {
+			isa = PBXGroup;
+			children = (
+				587C1DAD2E3AB70000F50B7F /* WordView.swift */,
+				587EC3A82E3D296E0010A7F3 /* WordMethods.swift */,
+			);
+			path = WordView;
+			sourceTree = "<group>";
+		};
+		587EC3AA2E3D29760010A7F3 /* WordListView */ = {
+			isa = PBXGroup;
+			children = (
+				587C1DAB2E3AB6EF00F50B7F /* WordListView.swift */,
+				587EC3AB2E3D29850010A7F3 /* WordListMethods.swift */,
+			);
+			path = WordListView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,16 +235,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				587C1DA32E3AB58B00F50B7F /* Badge.swift in Sources */,
+				587EC39D2E3D28690010A7F3 /* ContentViewMethods.swift in Sources */,
 				587C1DA42E3AB58B00F50B7F /* ContentView.swift in Sources */,
 				587C1DB02E3AB71400F50B7F /* BadgeGridView.swift in Sources */,
+				587EC3A42E3D28FC0010A7F3 /* BadgeMethods.swift in Sources */,
+				587EC3A02E3D28CC0010A7F3 /* BadgeGridMethods.swift in Sources */,
 				587EC3972E3D26210010A7F3 /* ViewModel.swift in Sources */,
 				587C1DB72E3AB9EE00F50B7F /* BadgeBank.swift in Sources */,
 				587C1DAE2E3AB70000F50B7F /* WordView.swift in Sources */,
 				587C1DA52E3AB58B00F50B7F /* WhatDaHuhApp.swift in Sources */,
 				587C1DA62E3AB58B00F50B7F /* Word.swift in Sources */,
 				587C1DB22E3AB71C00F50B7F /* BadgeView.swift in Sources */,
+				587EC3AC2E3D29850010A7F3 /* WordListMethods.swift in Sources */,
 				587C1DAC2E3AB6EF00F50B7F /* WordListView.swift in Sources */,
 				587C1DAA2E3AB62200F50B7F /* WordBank.swift in Sources */,
+				587EC3A92E3D296E0010A7F3 /* WordMethods.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

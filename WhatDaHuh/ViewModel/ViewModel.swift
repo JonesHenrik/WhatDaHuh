@@ -8,7 +8,7 @@
 import Foundation
 
 @Observable
-class WordUnlockModel {
+class ViewModel {
     var unlockedWords: Set<String> = []
 
     private let fileURL: URL = {
