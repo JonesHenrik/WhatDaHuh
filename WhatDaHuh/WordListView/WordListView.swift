@@ -40,7 +40,9 @@ struct WordListView: View {
                                 Text("alpha 👶 to boomer 👴")
                             }
                         } label: {
-                            Image(systemName: "slider.horizontal.3")
+//                            Image(systemName: "slider.horizontal.3")
+//                                .accessibilityLabel("Filter Words")
+                            ButtonView(sfSymbol: "slider.horizontal.3")
                                 .accessibilityLabel("Filter Words")
                         }
                     }
