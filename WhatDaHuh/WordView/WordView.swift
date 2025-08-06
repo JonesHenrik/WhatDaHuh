@@ -9,7 +9,14 @@ import SwiftUI
 
 struct WordView: View {
     var body: some View {
-        Text("Word View")
+        NavigationView {
+            Text("Word View")
+                .toolbar {
+                    ToolbarItem(placement: .topBarLeading) {
+                        NavigateBackView()
+                    }
+                }
+        }
     }
 }
 

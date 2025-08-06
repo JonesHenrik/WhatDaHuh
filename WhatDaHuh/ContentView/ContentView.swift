@@ -8,28 +8,36 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var router = Router()
+    
     var body: some View {
-        NavigationStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-            
-                .toolbar {
-                    NavigationLink(destination: WordListView()) {
-                        Image(systemName: "book.pages")
+        NavigationStack(path: $router.path) {
+            MainView()
+                .navigationDestination(for: Route.self) { route in
+                        switch route {
+                        case .main:
+                            MainView()
+                                .navigationBarBackButtonHidden(true)
+                        case .word:
+                            WordView()
+                                .navigationBarBackButtonHidden(true)
+                        case .wordList:
+                            WordListView()
+                                .navigationBarBackButtonHidden(true)
+                        case .badge:
+                            BadgeView()
+                                .navigationBarBackButtonHidden(true)
+                        case .badgeGrid:
+                            BadgeGridView()
+                                .navigationBarBackButtonHidden(true)
                     }
-                    NavigationLink(destination: BadgeGridView()) {
-                        Image(systemName: "medal")
-                    }
-                }
-                .onAppear {
-                    print(wordBank.count)
                 }
         }
+        .environmentObject(router)
     }
 }
 
-#Preview {
-    ContentView()
-}
+//#Preview {
+//    ContentView()
+//        .environment(Router())
+//}

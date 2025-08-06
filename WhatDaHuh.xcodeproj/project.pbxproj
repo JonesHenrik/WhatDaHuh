@@ -24,6 +24,9 @@
 		587EC3A42E3D28FC0010A7F3 /* BadgeMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587EC3A32E3D28FC0010A7F3 /* BadgeMethods.swift */; };
 		587EC3A92E3D296E0010A7F3 /* WordMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587EC3A82E3D296E0010A7F3 /* WordMethods.swift */; };
 		587EC3AC2E3D29850010A7F3 /* WordListMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587EC3AB2E3D29850010A7F3 /* WordListMethods.swift */; };
+		58994E952E4390C70029A2FE /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58994E942E4390C70029A2FE /* Router.swift */; };
+		58994E9B2E43A45A0029A2FE /* NavigateBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58994E9A2E43A45A0029A2FE /* NavigateBackView.swift */; };
+		58994E9D2E43A5CE0029A2FE /* NavigateToView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58994E9C2E43A5CE0029A2FE /* NavigateToView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +48,18 @@
 		587EC3A32E3D28FC0010A7F3 /* BadgeMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeMethods.swift; sourceTree = "<group>"; };
 		587EC3A82E3D296E0010A7F3 /* WordMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordMethods.swift; sourceTree = "<group>"; };
 		587EC3AB2E3D29850010A7F3 /* WordListMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListMethods.swift; sourceTree = "<group>"; };
+		58994E942E4390C70029A2FE /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		58994E9A2E43A45A0029A2FE /* NavigateBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigateBackView.swift; sourceTree = "<group>"; };
+		58994E9C2E43A5CE0029A2FE /* NavigateToView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigateToView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		58994E972E439C010029A2FE /* MainView */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MainView;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		587C1D852E3AAF0D00F50B7F /* Frameworks */ = {
@@ -78,11 +92,13 @@
 			isa = PBXGroup;
 			children = (
 				587C1D9C2E3AB58B00F50B7F /* Assets.xcassets */,
+				58994E932E43909E0029A2FE /* Navigation */,
 				587EC3AA2E3D29760010A7F3 /* WordListView */,
 				587EC3A72E3D29610010A7F3 /* WordView */,
 				587EC3A62E3D29240010A7F3 /* Banks */,
 				587EC3A22E3D28EB0010A7F3 /* BadgeView */,
 				587EC39E2E3D28B40010A7F3 /* BadgeGrid */,
+				58994E972E439C010029A2FE /* MainView */,
 				587EC39B2E3D27DE0010A7F3 /* ContentView */,
 				587EC3982E3D26290010A7F3 /* ViewModel */,
 				587C1DA72E3AB59000F50B7F /* Models */,
@@ -162,6 +178,16 @@
 			path = WordListView;
 			sourceTree = "<group>";
 		};
+		58994E932E43909E0029A2FE /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				58994E942E4390C70029A2FE /* Router.swift */,
+				58994E9A2E43A45A0029A2FE /* NavigateBackView.swift */,
+				58994E9C2E43A5CE0029A2FE /* NavigateToView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -176,6 +202,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				58994E972E439C010029A2FE /* MainView */,
 			);
 			name = WhatDaHuh;
 			packageProductDependencies = (
@@ -241,9 +270,12 @@
 				587EC3A42E3D28FC0010A7F3 /* BadgeMethods.swift in Sources */,
 				587EC3A02E3D28CC0010A7F3 /* BadgeGridMethods.swift in Sources */,
 				587EC3972E3D26210010A7F3 /* ViewModel.swift in Sources */,
+				58994E9D2E43A5CE0029A2FE /* NavigateToView.swift in Sources */,
 				587C1DB72E3AB9EE00F50B7F /* BadgeBank.swift in Sources */,
 				587C1DAE2E3AB70000F50B7F /* WordView.swift in Sources */,
 				587C1DA52E3AB58B00F50B7F /* WhatDaHuhApp.swift in Sources */,
+				58994E952E4390C70029A2FE /* Router.swift in Sources */,
+				58994E9B2E43A45A0029A2FE /* NavigateBackView.swift in Sources */,
 				587C1DA62E3AB58B00F50B7F /* Word.swift in Sources */,
 				587C1DB22E3AB71C00F50B7F /* BadgeView.swift in Sources */,
 				587EC3AC2E3D29850010A7F3 /* WordListMethods.swift in Sources */,
