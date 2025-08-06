@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct WordListView: View {
+    @Environment(Router.self) var router
+    
     var body: some View {
-        NavigationStack {
+        NavigationView {
             Text("Word List View")
                 .toolbar {
-                    ToolbarItem(placement: .navigationBarTrailing) {
+                    ToolbarItem(placement: .topBarLeading) {
+                        NavigateBackView()
+                    }
+                    ToolbarItem(placement: .topBarTrailing) {
                         Menu {
                             Button {
                                 // Alphabetize
@@ -46,4 +51,5 @@ struct WordListView: View {
 
 #Preview {
     WordListView()
+        .environment(Router())
 }

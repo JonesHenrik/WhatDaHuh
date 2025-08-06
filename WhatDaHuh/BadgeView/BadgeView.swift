@@ -9,7 +9,14 @@ import SwiftUI
 
 struct BadgeView: View {
     var body: some View {
-        Text("Badge View")
+        NavigationView {
+            Text("Badge View")
+                .toolbar {
+                    ToolbarItem(placement: .topBarLeading) {
+                        NavigateBackView()
+                    }
+                }
+        }
     }
 }
 
