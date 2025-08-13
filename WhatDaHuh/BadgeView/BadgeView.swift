@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct BadgeView: View {
+    @Environment(Router.self) var router
+    let currentBadge: Badge
     var body: some View {
         NavigationView {
-            Text("Badge View")
+            VStack {
+                Text("Badge View")
+                Text(currentBadge.title)
+                currentBadge.image
+                    .resizable()
+                    .scaledToFit()
+            }
                 .toolbar {
                     ToolbarItem(placement: .topBarLeading) {
                         NavigateBackView()
@@ -21,5 +29,6 @@ struct BadgeView: View {
 }
 
 #Preview {
-    BadgeView()
+    BadgeView(currentBadge: Badge(title: "", imageName: "certifiedW", words: [""]))
+        .environment(Router())
 }

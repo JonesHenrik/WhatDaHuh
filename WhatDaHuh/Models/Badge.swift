@@ -8,10 +8,15 @@
 import Foundation
 import SwiftUI
 
-struct Badge {
+struct Badge: Identifiable, Hashable {
+    let id = UUID()
     var title: String
-    var image: Image
+    var imageName: String
     var words: [String]
+    
+    var image: Image {
+            Image(imageName)
+        }
 }
 
-var sampleBadge = Badge(title: "Sample", image: Image(.sample), words: ["rizz", "no cap"])
+var sampleBadge = Badge(title: "Sample", imageName: "sample", words: ["rizz", "no cap"])

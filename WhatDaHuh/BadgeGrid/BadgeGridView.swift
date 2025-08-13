@@ -9,20 +9,19 @@ import SwiftUI
 
 struct BadgeGridView: View {
     @Environment(Router.self) var router
-    
-    var badges = ["bodega", "campCouture","cerifiedHaters", "certifiedW", "cloutCollector","delulu","dripDivison", "emotionallyDestroyed", "girlEra", "glitches", "maleArch", "meme", "performativeMaleUnion", "podiumTalk", "situationshipSociety","slapScale", "snackSnatchers", "swearSquad", "terminallyOnline", "thirstTrapCert", "toxicTalk" ]
     let columns = [
-        GridItem(.adaptive(minimum: 80))
+        GridItem(.adaptive(minimum: 100))
     ]
     var body: some View {
         NavigationView {
             ScrollView {
                 LazyVGrid(columns: columns, spacing: 20) {
-                    ForEach(badges, id: \.self) { badge in
+                    ForEach(badgeBank) { badge in
                         Button {
-                            
+                            router.navigate(to: .badge(badge))
+                  
                         } label: {
-                            Image(badge)
+                            badge.image
                                 .resizable()
                                 .scaledToFit()
                         }
@@ -36,7 +35,7 @@ struct BadgeGridView: View {
                     NavigateBackView()
                 }
             }
-        }    .frame(maxHeight: 1000)
+        }   // .frame(maxHeight: 1000)
         
     }
 }

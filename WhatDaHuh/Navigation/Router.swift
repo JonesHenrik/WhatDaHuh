@@ -13,7 +13,7 @@ enum Route: Hashable {
     case main
     case word
     case wordList
-    case badge
+    case badge(Badge)
     case badgeGrid
 }
 
