@@ -29,6 +29,6 @@ struct BadgeView: View {
 }
 
 #Preview {
-    BadgeView(currentBadge: Badge(title: "", imageName: "certifiedW", words: [""]))
+    BadgeView(currentBadge: Badge(title: "Certified W", imageName: "certifiedW", words: [""]))
         .environment(Router())
 }

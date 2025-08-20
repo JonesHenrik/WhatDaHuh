@@ -26,4 +26,5 @@ struct NavigateToView: View {
 
 #Preview {
     NavigateToView(destination: .wordList, view: "book.pages")
+        .environment(Router())
 }

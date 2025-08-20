@@ -19,6 +19,8 @@ struct BadgeGridView: View {
                     ForEach(badgeBank) { badge in
                         Button {
                             router.navigate(to: .badge(badge))
+                            print(router.path)
+                            print(router.path.count)
                   
                         } label: {
                             badge.image
