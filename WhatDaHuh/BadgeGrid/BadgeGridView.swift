@@ -36,8 +36,13 @@ struct BadgeGridView: View {
                 ToolbarItem(placement: .topBarLeading) {
                     NavigateBackView()
                 }
+            }.toolbar {
+                ToolbarItem(placement: .principal) {
+                    Text("badges")
+                        .font(.largeTitle)
+                }
             }
-        }   // .frame(maxHeight: 1000)
+        }
         
     }
 }

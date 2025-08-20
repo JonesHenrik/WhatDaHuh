@@ -109,10 +109,5 @@ let badgeBank: [Badge] = [
             title: "Slap Scale",
             imageName: "slapScale",
             words: ["slaps smacks", "bangs", "hits different", "bop"]
-        ),
-        Badge(title: "Ty Badge",
-              // still needs to made a png
-              imageName: "sample",
-              words: ["my name is ty and I love sugar"]
-             )
+        )
 ]
