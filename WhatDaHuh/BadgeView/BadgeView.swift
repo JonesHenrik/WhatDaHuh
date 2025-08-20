@@ -37,19 +37,21 @@ struct BadgeView: View {
                         .scrollContentBackground(.hidden)
                         .scrollDisabled(true)
                         .padding()
-                        
                     }
                 }
                 .toolbar {
                     ToolbarItem(placement: .topBarLeading) {
                         NavigateBackView()
+                            .accessibilityLabel("back a view")
                     }
                     ToolbarItem(placement: .principal) {
                         Text("badges")
                             .font(.largeTitle)
+                            .accessibilityLabel("badges")
                     }
                     ToolbarItem(placement: .topBarTrailing) {
                         Image(systemName: "square.and.arrow.up")
+                            .accessibilityLabel("Share badge")
                     }
                 }
             }
