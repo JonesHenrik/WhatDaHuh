@@ -13,10 +13,11 @@ struct Badge: Identifiable, Hashable {
     var title: String
     var imageName: String
     var words: [String]
+    var description: String
     
     var image: Image {
             Image(imageName)
         }
 }
 
-var sampleBadge = Badge(title: "Sample", imageName: "sample", words: ["rizz", "no cap"])
+var sampleBadge = Badge(title: "Sample", imageName: "sample", words: ["rizz", "no cap"], description: "Sample")

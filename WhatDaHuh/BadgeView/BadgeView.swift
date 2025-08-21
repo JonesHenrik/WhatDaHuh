@@ -17,7 +17,7 @@ struct BadgeView: View {
                     .resizable()
                     .scaledToFit()
                     .padding()
-                Text("Description")
+                Text(currentBadge.description)
                     .font(.body)
                     .italic()
                     .padding(.bottom)
@@ -59,6 +59,6 @@ struct BadgeView: View {
     }
 }
 #Preview {
-    BadgeView(currentBadge: Badge(title: "Certified W", imageName: "certifiedW", words: ["rizz", "goated", "tuff", "w", "hits"]))
+    BadgeView(currentBadge: Badge(title: "Certified W", imageName: "certifiedW", words: ["rizz", "goated", "tuff", "w", "hits"], description: "Compliments, wins, and hype"))
         .environment(Router())
 }
