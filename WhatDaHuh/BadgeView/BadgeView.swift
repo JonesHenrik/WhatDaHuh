@@ -9,6 +9,7 @@ import SwiftUI
 
 struct BadgeView: View {
     @Environment(Router.self) var router
+    @Environment(\.colorScheme) var colorScheme
     let currentBadge: Badge
     var body: some View {
         NavigationView {
@@ -41,7 +42,7 @@ struct BadgeView: View {
                 }
                 .toolbar {
                     ToolbarItem(placement: .topBarLeading) {
-                        NavigateBackView()
+                        NavigateBackView(color: colorScheme == .dark ? .white : .black)
                             .accessibilityLabel("back a view")
                     }
                     ToolbarItem(placement: .principal) {

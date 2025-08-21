@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct WordView: View {
+    @Environment(Router.self) var router
+    
     var body: some View {
         NavigationView {
             Text("Word View")
                 .toolbar {
                     ToolbarItem(placement: .topBarLeading) {
-                        NavigateBackView()
+                        NavigateBackView(color: .white)
                     }
                 }
         }

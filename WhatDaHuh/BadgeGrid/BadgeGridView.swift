@@ -9,6 +9,7 @@ import SwiftUI
 
 struct BadgeGridView: View {
     @Environment(Router.self) var router
+    @Environment(\.colorScheme) var colorScheme
     let columns = [
         GridItem(.adaptive(minimum: 100))
     ]
@@ -34,7 +35,7 @@ struct BadgeGridView: View {
             }
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
-                    NavigateBackView()
+                    NavigateBackView(color: colorScheme == .dark ? .white : .black)
                 }
             }.toolbar {
                 ToolbarItem(placement: .principal) {

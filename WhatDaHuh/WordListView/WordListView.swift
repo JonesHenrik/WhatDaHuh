@@ -9,13 +9,12 @@ import SwiftUI
 
 struct WordListView: View {
     @Environment(Router.self) var router
-    
     var body: some View {
         NavigationView {
             Text("Word List View")
                 .toolbar {
                     ToolbarItem(placement: .topBarLeading) {
-                        NavigateBackView()
+                        NavigateBackView(color: .white)
                     }
                     ToolbarItem(placement: .topBarTrailing) {
                         Menu {
