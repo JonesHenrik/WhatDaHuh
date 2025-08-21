@@ -28,6 +28,7 @@
 		58994E9B2E43A45A0029A2FE /* NavigateBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58994E9A2E43A45A0029A2FE /* NavigateBackView.swift */; };
 		58994E9D2E43A5CE0029A2FE /* NavigateToView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58994E9C2E43A5CE0029A2FE /* NavigateToView.swift */; };
 		58994EA42E43ABBF0029A2FE /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58994EA32E43ABBF0029A2FE /* ButtonView.swift */; };
+		58B2F16D2E575FE000F72F1C /* wordFoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B2F16C2E575FE000F72F1C /* wordFoundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		58994E9A2E43A45A0029A2FE /* NavigateBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigateBackView.swift; sourceTree = "<group>"; };
 		58994E9C2E43A5CE0029A2FE /* NavigateToView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigateToView.swift; sourceTree = "<group>"; };
 		58994EA32E43ABBF0029A2FE /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		58B2F16C2E575FE000F72F1C /* wordFoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordFoundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -176,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				587C1DAB2E3AB6EF00F50B7F /* WordListView.swift */,
+				58B2F16C2E575FE000F72F1C /* wordFoundView.swift */,
 				587EC3AB2E3D29850010A7F3 /* WordListMethods.swift */,
 			);
 			path = WordListView;
@@ -280,6 +283,7 @@
 				587C1DB02E3AB71400F50B7F /* BadgeGridView.swift in Sources */,
 				587EC3A42E3D28FC0010A7F3 /* BadgeMethods.swift in Sources */,
 				587EC3A02E3D28CC0010A7F3 /* BadgeGridMethods.swift in Sources */,
+				58B2F16D2E575FE000F72F1C /* wordFoundView.swift in Sources */,
 				587EC3972E3D26210010A7F3 /* ViewModel.swift in Sources */,
 				58994E9D2E43A5CE0029A2FE /* NavigateToView.swift in Sources */,
 				587C1DB72E3AB9EE00F50B7F /* BadgeBank.swift in Sources */,
