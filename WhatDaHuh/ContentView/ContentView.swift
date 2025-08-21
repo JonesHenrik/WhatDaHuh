@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject private var router = Router()
-    
     var body: some View {
         NavigationStack(path: $router.path) {
             MainView()
@@ -24,9 +23,9 @@ struct ContentView: View {
                         case .wordList:
                             WordListView()
                                 .navigationBarBackButtonHidden(true)
-                        case .badge:
-                            BadgeView()
-                                .navigationBarBackButtonHidden(true)
+                        case .badge(let badge):
+                               BadgeView(currentBadge: badge)
+                                   .navigationBarBackButtonHidden(true)
                         case .badgeGrid:
                             BadgeGridView()
                                 .navigationBarBackButtonHidden(true)

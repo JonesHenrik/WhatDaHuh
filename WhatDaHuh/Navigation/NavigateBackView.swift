@@ -13,6 +13,7 @@ struct NavigateBackView: View {
     var body: some View {
         Button {
             router.navigateBack()
+        
         } label: {
             Image(systemName: "chevron.backward")
         }
@@ -21,4 +22,5 @@ struct NavigateBackView: View {
 
 #Preview {
     NavigateBackView()
+        .environment(Router())
 }
