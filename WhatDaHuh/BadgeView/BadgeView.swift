@@ -16,6 +16,7 @@ struct BadgeView: View {
                 currentBadge.image
                     .resizable()
                     .scaledToFit()
+                    .shadow(color: .shadow ,radius: 5, x: 0, y: 15)
                     .padding()
                 Text(currentBadge.description)
                     .font(.body)
@@ -32,11 +33,15 @@ struct BadgeView: View {
                         
                         List(currentBadge.words, id: \.self) { word in
                             Text(word)
-                                .font(.body)
+                                .font(.title2)
                         }
                         .scrollContentBackground(.hidden)
                         .scrollDisabled(true)
                         .padding()
+                       
+                        .frame(width: geo.size.width * 0.9, height: geo.size.height * 1.4)
+                        .position(x: geo.size.width / 2, y: geo.size.height / 1.4)
+                        
                     }
                 }
                 .toolbar {
@@ -59,6 +64,6 @@ struct BadgeView: View {
     }
 }
 #Preview {
-    BadgeView(currentBadge: Badge(title: "Certified W", imageName: "certifiedW", words: ["rizz", "goated", "tuff", "w", "hits"], description: "Compliments, wins, and hype"))
+    BadgeView(currentBadge: Badge(title: "Certified W", imageName: "cloutCollector", words: ["rizz", "goated", "tuff", "w", "hits"], description: "Compliments, wins, and hype"))
         .environment(Router())
 }
