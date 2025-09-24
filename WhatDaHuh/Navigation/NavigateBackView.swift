@@ -9,6 +9,7 @@ import SwiftUI
 
 struct NavigateBackView: View {
     @Environment(Router.self) var router
+    var color: Color
     
     var body: some View {
         Button {
@@ -16,11 +17,13 @@ struct NavigateBackView: View {
         
         } label: {
             Image(systemName: "chevron.backward")
+                .foregroundStyle(color)
+                .padding()
         }
     }
 }
 
 #Preview {
-    NavigateBackView()
+    NavigateBackView(color: .white)
         .environment(Router())
 }

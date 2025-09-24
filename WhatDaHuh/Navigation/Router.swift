@@ -11,7 +11,7 @@ import SwiftUI
 /// Represents the different destinations in the navigation stack.
 enum Route: Hashable {
     case main
-    case word
+    case word(Word)
     case wordList
     case badge(Badge)
     case badgeGrid

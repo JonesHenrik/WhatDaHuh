@@ -13,14 +13,14 @@ struct ButtonView: View {
     var body: some View {
 
             ZStack {
-                Circle()
-                    .foregroundStyle(.buttonBackground)
+                //Capsule()
+                 //   .foregroundStyle(.buttonBackground)
                     
                 Image(systemName: sfSymbol)
-                    .foregroundStyle(.white)
+                    
                     .padding()
             }
-            .padding(.top)
+            //.padding(.top)
         
     }
 }

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MainView: View {
     @EnvironmentObject private var router: Router
+    @Binding var vm: ViewModel
     
     var body: some View {
             Image(systemName: "globe")
@@ -26,7 +27,7 @@ struct MainView: View {
     }
 }
 
-#Preview {
-    MainView()
-        .environment(Router())
-}
+//#Preview {
+//    MainView()
+//        .environment(Router())
+//}

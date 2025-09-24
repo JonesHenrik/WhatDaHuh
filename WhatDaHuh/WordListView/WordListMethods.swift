@@ -73,4 +73,8 @@ extension ViewModel {
             wordBank.first { $0.title.lowercased() == title.lowercased() }
         }
     }
+    
+    func stringToWord(for title: String) -> Word? {
+        return wordBank.first { $0.title.lowercased().trimmingCharacters(in: .whitespacesAndNewlines) == title.lowercased().trimmingCharacters(in: .whitespacesAndNewlines) }
+        }
 }
