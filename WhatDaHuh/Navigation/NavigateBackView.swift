@@ -18,6 +18,7 @@ struct NavigateBackView: View {
         } label: {
             Image(systemName: "chevron.backward")
                 .foregroundStyle(color)
+                .padding()
         }
     }
 }

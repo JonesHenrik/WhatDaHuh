@@ -17,7 +17,7 @@ struct BadgeView: View {
                 currentBadge.image
                     .resizable()
                     .scaledToFit()
-                    .shadow(color: .shadow ,radius: 5, x: 0, y: 15)
+                    .shadow(color: Color("shadow") ,radius: 5, x: 0, y: 15)
                     .padding()
                 Text(currentBadge.description)
                     .font(.body)
