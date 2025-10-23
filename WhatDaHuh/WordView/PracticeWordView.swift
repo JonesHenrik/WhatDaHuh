@@ -1,29 +1,23 @@
 //
-//  WordView.swift
+//  PracticeWordView.swift
 //  WhatDaHuh
 //
-//  Created by Henrik Jones on 7/30/25.
+//  Created by Henrik Jones on 10/23/25.
 //
 
 import SwiftUI
 
-struct WordView: View {
-    
-    let currentWord: Word
+struct PracticeWordView: View {
+    let word: Word
     var body: some View {
         NavigationStack {
-            Text("\(currentWord.title) View")
-//                .toolbar {
-//                    ToolbarItem(placement: .topBarLeading) {
-//                        NavigateBackView(color: .white)
-//                    }
-//                }
+            Text("\(word.title) View")
         }
     }
 }
 
 #Preview {
-    WordView(currentWord: Word(
+    PracticeWordView(word: Word(
         title: "rizz",
         wordClass: "noun",
         phoneticSpelling: "riz",

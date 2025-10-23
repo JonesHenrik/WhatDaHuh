@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct MainView: View {
-    @EnvironmentObject private var router: Router
     @Binding var vm: ViewModel
     
     var body: some View {
@@ -18,9 +17,19 @@ struct MainView: View {
             Text("Hello, world!")
             
                 .toolbar {
-                    NavigateToView(destination: .wordList, view: "book.pages")
-                        .padding()
-                    NavigateToView(destination: .badgeGrid, view: "medal")
+                    NavigationLink {
+                        WordListView(vm: $vm)
+                    } label: {
+                        ButtonView(sfSymbol: "book.pages")
+                    }
+                    .padding()
+                    
+                    NavigationLink {
+                        BadgeGridView()
+                    } label: {
+                        ButtonView(sfSymbol: "medal")
+                    }
+                    
                         .padding()
                 }
                 .onAppear {
@@ -29,7 +38,7 @@ struct MainView: View {
     }
 }
 
-//#Preview {
-//    MainView()
-//        .environment(Router())
-//}
+#Preview {
+    MainView(vm: .constant(ViewModel()))
+
+}

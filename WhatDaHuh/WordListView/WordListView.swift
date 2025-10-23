@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct WordListView: View {
-    @Environment(Router.self) var router
     @Binding var vm: ViewModel
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack {
                 ZStack {
                     GeometryReader { geo in
@@ -26,9 +25,9 @@ struct WordListView: View {
                         if !vm.unlockedTitles.isEmpty {
                             ScrollView {
                                 ForEach(Array(vm.unlockedTitles), id: \.self) { word in
-                                    Button {
+                                    NavigationLink {
                                         if let newWord = vm.stringToWord(for: word) {
-                                            router.navigate(to: .word(newWord))
+                                            WordView(currentWord: newWord)
                                         }
                                     } label: {
                                         if let newWord = vm.stringToWord(for: word) {
@@ -51,9 +50,9 @@ struct WordListView: View {
                         .font(.largeTitle)
                         .accessibilityLabel("words found")
                 }
-                ToolbarItem(placement: .topBarLeading) {
-                    NavigateBackView(color: .white)
-                }
+//                ToolbarItem(placement: .topBarLeading) {
+//                    NavigateBackView(color: .white)
+//                }
                 ToolbarItem(placement: .topBarTrailing) {
                     Menu {
                         Button {
@@ -90,5 +89,5 @@ struct WordListView: View {
 
 //#Preview {
 //    WordListView()
-//        .environment(Router())
+
 //}
