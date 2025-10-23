@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct BadgeView: View {
-    @Environment(Router.self) var router
     @Environment(\.colorScheme) var colorScheme
     let currentBadge: Badge
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack {
                 currentBadge.image
                     .resizable()
@@ -46,10 +45,6 @@ struct BadgeView: View {
                     }
                 }
                 .toolbar {
-                    ToolbarItem(placement: .topBarLeading) {
-                        NavigateBackView(color: colorScheme == .dark ? .white : .black)
-                            .accessibilityLabel("back a view")
-                    }
                     ToolbarItem(placement: .principal) {
                         Text("badges")
                             .font(.largeTitle)
@@ -66,5 +61,4 @@ struct BadgeView: View {
 }
 #Preview {
     BadgeView(currentBadge: Badge(title: "Certified W", imageName: "cloutCollector", words: ["rizz", "goated", "tuff", "w", "hits"], description: "Compliments, wins, and hype"))
-        .environment(Router())
 }

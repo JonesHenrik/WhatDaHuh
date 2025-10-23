@@ -10,7 +10,7 @@ import Foundation
 @Observable
 class ViewModel {
     /// A set of lowercased word titles that have been unlocked by the user.
-    var unlockedTitles: Set<String> = []
+    var unlockedTitles: Set<String> = ["rizz"]
     
     /// The file URL where the unlocked words are saved as a JSON array.
     let fileURL: URL = {

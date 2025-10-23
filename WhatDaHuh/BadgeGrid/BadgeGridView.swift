@@ -8,21 +8,17 @@
 import SwiftUI
 
 struct BadgeGridView: View {
-    @Environment(Router.self) var router
     @Environment(\.colorScheme) var colorScheme
     let columns = [
         GridItem(.adaptive(minimum: 100))
     ]
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ScrollView {
                 LazyVGrid(columns: columns, spacing: 20) {
                     ForEach(badgeBank) { badge in
-                        Button {
-                            router.navigate(to: .badge(badge))
-                            print(router.path)
-                            print(router.path.count)
-                  
+                        NavigationLink {
+                            BadgeView(currentBadge: badge)
                         } label: {
                             badge.image
                                 .resizable()
@@ -34,10 +30,6 @@ struct BadgeGridView: View {
                 .padding(.horizontal)
             }
             .toolbar {
-                ToolbarItem(placement: .topBarLeading) {
-                    NavigateBackView(color: colorScheme == .dark ? .white : .black)
-                }
-            }.toolbar {
                 ToolbarItem(placement: .principal) {
                     Text("badges")
                         .font(.largeTitle)
@@ -50,6 +42,4 @@ struct BadgeGridView: View {
 
 #Preview {
     BadgeGridView()
-        .environment(Router())
-    
 }
