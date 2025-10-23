@@ -18,7 +18,7 @@ struct ButtonView: View {
                     
                 Image(systemName: sfSymbol)
                     
-                    .padding()
+//                    .padding()
             }
             //.padding(.top)
         

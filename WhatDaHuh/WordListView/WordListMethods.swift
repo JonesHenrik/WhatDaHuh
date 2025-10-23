@@ -18,7 +18,7 @@ extension ViewModel {
     /// - Returns: An alphabetically sorted array of unlocked `Word`s.
     func unlockedWordsAZ(from wordBank: [Word]) -> [Word] {
         wordBank
-            .filter { unlockedWords.contains($0.title.lowercased()) }
+            .filter { unlockedTitles.contains($0.title.lowercased()) }
             .sorted { $0.title.lowercased() < $1.title.lowercased() }
     }
 
@@ -34,7 +34,7 @@ extension ViewModel {
     /// - Returns: An alphabetically sorted array of lowkey gem `Word`s that have been unlocked.
     func unlockedLowkeyGemsAZ(from wordBank: [Word]) -> [Word] {
         wordBank
-            .filter { unlockedWords.contains($0.title.lowercased()) && $0.isLowkeyGem }
+            .filter { unlockedTitles.contains($0.title.lowercased()) && $0.isLowkeyGem }
             .sorted { $0.title.lowercased() < $1.title.lowercased() }
     }
 

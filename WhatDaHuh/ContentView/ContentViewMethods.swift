@@ -34,7 +34,7 @@ extension ViewModel {
             return
         }
         
-        if !unlockedWords.contains(matchedWord.title.lowercased()) {
+        if !unlockedTitles.contains(matchedWord.title.lowercased()) {
             unlock(word: matchedWord)
             print("✅ Unlocked: \(matchedWord.title)")
         } else {

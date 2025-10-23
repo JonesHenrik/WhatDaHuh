@@ -19,7 +19,9 @@ struct MainView: View {
             
                 .toolbar {
                     NavigateToView(destination: .wordList, view: "book.pages")
+                        .padding()
                     NavigateToView(destination: .badgeGrid, view: "medal")
+                        .padding()
                 }
                 .onAppear {
                     print(wordBank.count)
