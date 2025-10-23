@@ -7,34 +7,47 @@
 
 import SwiftUI
 
-struct wordFoundView: View {
-    var foundWord: Word
+struct wordFoundTileView: View {
+    let foundWord: Word
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 9)
                 .foregroundStyle(.backgroundWordFoundView)
                 .shadow(radius: 8, y: 4)
-            VStack {
+            VStack(alignment: .leading, spacing: 12) {
                 HStack {
                     Text(foundWord.title)
+                        
                         .font(.title)
+                        .padding(.top)
+                        .padding(.leading)
+                        
+                        
                     Spacer()
                     Text(foundWord.date, format: .dateTime.day().month().year())
+                        
                         .font(.headline)
+                        .padding(.vertical)
+                        .padding(.trailing)
+                        
                 }
-                .padding(.top)
-                .padding(.horizontal, 40)
+                
+                
                 Spacer()
                 Text(foundWord.definitions[0])
+                    
                     .padding(.horizontal)
                     .padding(.bottom)
+                    .multilineTextAlignment(.leading)
             }
+            .foregroundStyle(.text)
         }
+        .padding()
     }
 }
 
 #Preview {
-    wordFoundView(foundWord: Word(
+    wordFoundTileView(foundWord: Word(
         title: "rizz",
         wordClass: "noun",
         phoneticSpelling: "riz",

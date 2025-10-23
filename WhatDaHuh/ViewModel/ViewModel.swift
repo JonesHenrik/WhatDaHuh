@@ -10,7 +10,7 @@ import Foundation
 @Observable
 class ViewModel {
     /// A set of lowercased word titles that have been unlocked by the user.
-    var unlockedWords: Set<String> = []
+    var unlockedTitles: Set<String> = ["rizz", "mid", "mr put it on"]
     
     /// The file URL where the unlocked words are saved as a JSON array.
     let fileURL: URL = {
@@ -27,7 +27,7 @@ class ViewModel {
     ///
     /// - Parameter word: The `Word` to unlock.
     func unlock(word: Word) {
-        unlockedWords.insert(word.title.lowercased())
+        unlockedTitles.insert(word.title.lowercased())
         saveUnlockedWords()
     }
 
@@ -36,7 +36,7 @@ class ViewModel {
     /// - Parameter word: The `Word` to check.
     /// - Returns: `true` if the word is unlocked; `false` otherwise.
     func isUnlocked(_ word: Word) -> Bool {
-        unlockedWords.contains(word.title.lowercased())
+        unlockedTitles.contains(word.title.lowercased())
     }
 
     /// Saves the current set of unlocked words to disk as a JSON array.
@@ -44,7 +44,7 @@ class ViewModel {
     /// This method is called automatically after unlocking a word.
     private func saveUnlockedWords() {
         do {
-            let data = try JSONEncoder().encode(Array(unlockedWords))
+            let data = try JSONEncoder().encode(Array(unlockedTitles))
             try data.write(to: fileURL, options: [.atomicWrite])
         } catch {
             print("❌ Failed to save unlocked words: \(error.localizedDescription)")
@@ -59,7 +59,7 @@ class ViewModel {
         do {
             let data = try Data(contentsOf: fileURL)
             let titles = try JSONDecoder().decode([String].self, from: data)
-            unlockedWords = Set(titles)
+            unlockedTitles = Set(titles)
         } catch {
             print("❌ Failed to load unlocked words: \(error.localizedDescription)")
         }

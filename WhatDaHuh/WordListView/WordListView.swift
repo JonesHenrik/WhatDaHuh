@@ -23,16 +23,16 @@ struct WordListView: View {
                                    alignment: .top)
                             .position(x: geo.size.width / 2, y: geo.size.height / 10000)
                         
-                        if !vm.unlockedWords.isEmpty {
+                        if !vm.unlockedTitles.isEmpty {
                             ScrollView {
-                                ForEach(Array(vm.unlockedWords), id: \.self) { word in
+                                ForEach(Array(vm.unlockedTitles), id: \.self) { word in
                                     Button {
                                         if let newWord = vm.stringToWord(for: word) {
                                             router.navigate(to: .word(newWord))
                                         }
                                     } label: {
                                         if let newWord = vm.stringToWord(for: word) {
-                                            wordFoundView(foundWord: newWord)
+                                            wordFoundTileView(foundWord: newWord)
                                         }
                                     }
                                 }
