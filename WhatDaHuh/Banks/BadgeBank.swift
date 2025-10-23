@@ -10,114 +10,104 @@ import SwiftUI
 
 // All badges will be stored as an array here
 let badgeBank: [Badge] = [
-    Badge(
-            title: "Swear Squad",
-            image: Image(.sample),
-            words: ["deadass", "on god", "on fonem grave", "fax no printer", "ts"]
-        ),
         Badge(
             title: "Podium Talk",
-            image: Image(.podiumTalk),
-            words: ["podium", "pop your shit", "clock it", "big ups", "shoaaaaa"]
+            imageName: "podiumTalk",
+            words: ["podium", "pop your shit", "clock it", "big ups", "shoaaaaa"], description: "main character energy and presence"
         ),
         Badge(
             title: "Certified W",
-            image: Image(.certifiedW),
-            words: ["rizz", "goated", "tuff", "w", "hits"]
+            imageName: "certifiedW",
+            words: ["rizz", "goated", "tuff", "w", "hits"], description: "compliments, wins, and hype"
         ),
         Badge(
             title: "Certified Haters",
-            image: Image(.cerifiedHaters),
-            words: ["opp", "ratio", "pmo", "pressed", "dick riding"]
+            imageName: "cerifiedHaters",
+            words: ["opp", "ratio", "pmo", "pressed", "dick riding"], description: "calling out, flame, and beef"
         ),
         Badge(
             title: "Camp Couture",
-            image: Image(.campCouture),
-            words: ["camp", "tea", "wig", "gagged", "purr"]
+            imageName: "campCouture",
+            words: ["camp", "tea", "wig", "gagged", "purr"], description: "sass, excess, and style"
         ),
         Badge(
             title: "Performative Male Union",
-            image: Image(.performativeMaleUnion),
-            words: ["performative male", "ashton hall", "chopped chin", "alpha", "sigma"]
+            imageName: "performativeMaleUnion",
+            words: ["performative male", "ashton hall", "chopped chin", "alpha", "sigma"], description: "masculinity as performance"
         ),
         Badge(
             title: "Clout Collectors",
-            image: Image(.cloutCollector),
-            words: ["labubu", "aura", "aura farming", "clout", "maxxing"]
+            imageName: "cloutCollector",
+            words: ["labubu", "aura", "aura farming", "clout", "maxxing"], description: "internet flexing and social climbing"
         ),
         Badge(
             title: "Girl Era",
-            image: Image(.girlEra),
-            words: ["girl math", "just a girl", "girl dinner", "face card", "snack"]
+            imageName: "girlEra",
+            words: ["girl math", "just a girl", "girl dinner", "face card", "snack"], description: "fem-coded chaos and expression"
         ),
         Badge(
             title: "Situationship Society",
-            image: Image(.situationshipSociety),
-            words: ["situationship", "imaginationship", "for the streets", "shipping", "simp"]
+            imageName: "situationshipSociety",
+            words: ["situationship", "imaginationship", "for the streets", "shipping", "simp"], description: "messy love, attraction, and confusion"
         ),
         Badge(
             title: "Drip Division",
-            image: Image(.dripDivison),
-            words: ["drip", "mr. put it on", "fit check", "ootd", "serving"]
+            imageName: "dripDivison",
+            words: ["drip", "mr. put it on", "fit check", "ootd", "serving"], description: "fit checks and fashion slang"
         ),
         Badge(
             title: "Snack Snatchers",
-            image: Image(.snackSnatchers),
-            words: ["fanum tax", "munch", "big back", "dome", "aah"]
+            imageName: "snackSnatchers",
+            words: ["fanum tax", "munch", "big back", "dome", "aah"], description: "food, body, and eating behavior"
         ),
         Badge(
             title: "Bodega",
-            image: Image(.bodega),
-            words: ["ocky way", "mikes way", "don’t forget the bev", "fine shyt", "wocky slush"]
+            imageName: "bodega",
+            words: ["ocky way", "mikes way", "don’t forget the bev", "fine shyt", "wocky slush"], description: "viral phrases from food culture"
         ),
         Badge(
             title: "Delulu Department",
-            image: Image(.delulu),
-            words: ["delulu", "lore", "canon event", "roman empire", "my sheila"]
+            imageName: "delulu",
+            words: ["delulu", "lore", "canon event", "roman empire", "my sheila"], description: "fantasies, edits, overthinking"
         ),
         Badge(
             title: "Terminally Online",
-            image: Image(.terminallyOnline),
-            words: ["zynbabwe", "cart brain", "chat", "penjamin franklin", "dono"]
+            imageName: "terminallyOnline",
+            words: ["zynbabwe", "cart brain", "chat", "penjamin franklin", "dono"], description: "extremely internet-coded behavior"
         ),
         Badge(
             title: "Glitches",
-            image: Image(.glitches),
-            words: ["millennial pause", "gen z stare", "we outside", "sending me", "not it"]
+            imageName: "glitches",
+            words: ["millennial pause", "gen z stare", "we outside", "sending me", "not it"], description: "mannerisms and ironic detachment"
         ),
         Badge(
             title: "Emotionally Destroyed",
-            image: Image(.emotionallyDestroyed),
-            words: ["im dead", "im screaming", "crying", "something serious", "sickened"]
+            imageName: "emotionallyDestroyed",
+            words: ["im dead", "im screaming", "crying", "something serious", "sickened"], description: "reactions, memes, & feelings overload"
         ),
         Badge(
             title: "Meme Moments",
-            image: Image(.meme),
-            words: ["what da helly", "roger nooo"]
+            imageName: "meme",
+            words: ["what da helly", "roger nooo"], description: "pop culture soundbites and edits"
         ),
         Badge(
             title: "Thirst Trap Cert",
-            image: Image(.thirstTrapCert),
-            words: ["bricked", "gyat", "lip pillow", "thirst trap", "dihh"]
+            imageName: "thirstTrapCert",
+            words: ["bricked", "gyat", "lip pillow", "thirst trap", "dihh"], description: "hotness, lust, and body talk"
         ),
         Badge(
             title: "Toxic Talk",
-            image: Image(.toxicTalk),
-            words: ["sybau", "sdiybt", "fien", "huzz", "chuzz"]
+            imageName: "toxicTalk",
+            words: ["sybau", "sdiybt", "fien", "huzz", "chuzz"], description: "disrespect, wild roasts, and jokes"
         ),
         Badge(
             title: "Male Archetypes",
-            image: Image(.maleArch),
-            words: ["high value man", "cuck", "cuck chair", "bruzz", "67"]
+            imageName: "maleArch",
+            words: ["high value man", "cuck", "cuck chair", "bruzz", "67"], description: "identity and internet masculinity"
         ),
         Badge(
             title: "Slap Scale",
-            image: Image(.slapScale),
-            words: ["slaps smacks", "bangs", "hits different", "bop"]
-        ),
-        Badge(title: "Ty Badge",
-              // still needs to made a png
-              image: Image(.sample),
-              words: ["my name is ty and I love sugar"]
-             )
+            imageName: "slapScale",
+            words: ["slaps smacks", "bangs", "hits different", "bop"], description: "reactions to music/media/food"
+        )
 ]

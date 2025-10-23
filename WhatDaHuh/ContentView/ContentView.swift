@@ -9,24 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject private var router = Router()
+    @State private var vm = ViewModel()
     
     var body: some View {
         NavigationStack(path: $router.path) {
-            MainView()
+            MainView(vm: $vm)
                 .navigationDestination(for: Route.self) { route in
                         switch route {
                         case .main:
-                            MainView()
+                            MainView(vm: $vm)
                                 .navigationBarBackButtonHidden(true)
-                        case .word:
-                            WordView()
+                        case .word(let word):
+                            WordView(currentWord: word)
                                 .navigationBarBackButtonHidden(true)
                         case .wordList:
-                            WordListView()
+                            WordListView(vm: $vm)
                                 .navigationBarBackButtonHidden(true)
-                        case .badge:
-                            BadgeView()
-                                .navigationBarBackButtonHidden(true)
+                        case .badge(let badge):
+                               BadgeView(currentBadge: badge)
+                                   .navigationBarBackButtonHidden(true)
                         case .badgeGrid:
                             BadgeGridView()
                                 .navigationBarBackButtonHidden(true)

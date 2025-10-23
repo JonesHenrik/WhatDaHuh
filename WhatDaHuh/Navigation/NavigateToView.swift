@@ -19,11 +19,12 @@ struct NavigateToView: View {
         } label: {
             // Should become the view in the hifi in the future.
             // We are able to build out a view and call in the needed sf symbol
-            Image(systemName: view)
+            ButtonView(sfSymbol: view)
         }
     }
 }
 
 #Preview {
     NavigateToView(destination: .wordList, view: "book.pages")
+        .environment(Router())
 }
