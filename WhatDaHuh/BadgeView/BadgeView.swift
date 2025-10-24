@@ -27,16 +27,20 @@ struct BadgeView: View {
                         Circle()
                             .foregroundStyle(Color.background)
                             .frame(width: geo.size.width * 2.0,
-                                   height: geo.size.width * 1.6,
+                                   height: geo.size.width * 1.65,
                                    alignment: .bottom)
                             .position(x: geo.size.width / 2, y: geo.size.height)
                         
-                        List(currentBadge.words, id: \.self) { word in
-                            Text(word)
-                                .font(.title2)
+                        List(currentBadge.fullWords(from: wordBank)) { word in
+                            HStack{
+                                Text("\(word.title)")
+                                    .font(.title2)
+                                Spacer()
+                                Text("\(word.isLowkeyGem ? "💎" : "")")
+                            }
+                        
                         }
                         .scrollContentBackground(.hidden)
-                        .scrollDisabled(true)
                         .padding()
                        
                         .frame(width: geo.size.width * 0.9, height: geo.size.height * 1.4)

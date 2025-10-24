@@ -19,5 +19,9 @@ struct Badge: Identifiable, Hashable {
             Image(imageName)
         }
 }
-
+extension Badge {
+    func fullWords(from wordBank: [Word]) -> [Word] {
+        wordBank.filter { words.contains($0.title) }
+    }
+}
 var sampleBadge = Badge(title: "Sample", imageName: "sample", words: ["rizz", "no cap"], description: "Sample")

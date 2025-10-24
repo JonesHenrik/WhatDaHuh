@@ -18,7 +18,7 @@ struct BadgeGridView: View {
                 LazyVGrid(columns: columns, spacing: 20) {
                     ForEach(badgeBank) { badge in
                         NavigationLink {
-                            BadgeView(currentBadge: badge)
+                            BadgeView(currentBadge: badge )
                         } label: {
                             badge.image
                                 .resizable()
@@ -43,3 +43,4 @@ struct BadgeGridView: View {
 #Preview {
     BadgeGridView()
 }
+
