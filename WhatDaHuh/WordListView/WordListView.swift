@@ -21,13 +21,13 @@ struct WordListView: View {
                                    height: geo.size.height * 1.4,
                                    alignment: .top)
                             .position(x: geo.size.width / 2, y: geo.size.height / 10000)
-                        
+                    }
                         if !vm.unlockedTitles.isEmpty {
                             ScrollView {
                                 ForEach(Array(vm.unlockedTitles), id: \.self) { word in
                                     NavigationLink {
                                         if let newWord = vm.stringToWord(for: word) {
-                                            WordView(currentWord: newWord)
+                                            WordView(vm: $vm, currentWord: newWord)
                                         }
                                     } label: {
                                         if let newWord = vm.stringToWord(for: word) {
@@ -40,7 +40,7 @@ struct WordListView: View {
                             Text("words and definitions will appear here after submition!")
                                 .multilineTextAlignment(.center)
                         }
-                    }
+                    
                 }
             }
             .toolbar {
@@ -87,7 +87,7 @@ struct WordListView: View {
     }
 }
 
-//#Preview {
-//    WordListView()
+#Preview {
+    WordListView(vm: .constant(ViewModel()))
 
-//}
+}
