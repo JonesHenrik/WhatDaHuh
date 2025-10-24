@@ -11,16 +11,10 @@ struct ButtonView: View {
     var sfSymbol: String
     
     var body: some View {
+                    
+        Image(systemName: sfSymbol)
+            
 
-            ZStack {
-                //Capsule()
-                 //   .foregroundStyle(.buttonBackground)
-                    
-                Image(systemName: sfSymbol)
-                    
-//                    .padding()
-            }
-            //.padding(.top)
         
     }
 }
