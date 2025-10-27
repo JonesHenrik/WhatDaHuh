@@ -7,7 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		580D7F8B2EAABBAA00FC1F02 /* PracticeWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D7F8A2EAABBAA00FC1F02 /* PracticeWordView.swift */; };
+		580D7F932EABBEB400FC1F02 /* titleAndSoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D7F922EABBEB400FC1F02 /* titleAndSoundView.swift */; };
+		580D7FAB2EABCC5C00FC1F02 /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D7FAA2EABCC5C00FC1F02 /* CustomButtonView.swift */; };
+		580D7FAE2EABCCEE00FC1F02 /* PickerOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D7FAD2EABCCEE00FC1F02 /* PickerOptionView.swift */; };
+		580D7FB02EABCE8400FC1F02 /* PickerParentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D7FAF2EABCE8400FC1F02 /* PickerParentView.swift */; };
+		580D7FB22EABF84900FC1F02 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D7FB12EABF84900FC1F02 /* CardView.swift */; };
+		580D7FB52EAC068A00FC1F02 /* BadgeProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D7FB42EAC068A00FC1F02 /* BadgeProgressView.swift */; };
+		580D7FB72EAC088A00FC1F02 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D7FB62EAC088A00FC1F02 /* ProgressBarView.swift */; };
+		580D7FB92EAC0C1600FC1F02 /* BadgeProgressMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D7FB82EAC0C1600FC1F02 /* BadgeProgressMethods.swift */; };
+		580D7FCF2EAC14E200FC1F02 /* WordsCollectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580D7FCE2EAC14E200FC1F02 /* WordsCollectedView.swift */; };
 		587C1DA22E3AB58B00F50B7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 587C1D9C2E3AB58B00F50B7F /* Assets.xcassets */; };
 		587C1DA32E3AB58B00F50B7F /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587C1D9D2E3AB58B00F50B7F /* Badge.swift */; };
 		587C1DA42E3AB58B00F50B7F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587C1D9E2E3AB58B00F50B7F /* ContentView.swift */; };
@@ -30,7 +38,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		580D7F8A2EAABBAA00FC1F02 /* PracticeWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeWordView.swift; sourceTree = "<group>"; };
+		580D7F922EABBEB400FC1F02 /* titleAndSoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = titleAndSoundView.swift; sourceTree = "<group>"; };
+		580D7FAA2EABCC5C00FC1F02 /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
+		580D7FAD2EABCCEE00FC1F02 /* PickerOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerOptionView.swift; sourceTree = "<group>"; };
+		580D7FAF2EABCE8400FC1F02 /* PickerParentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerParentView.swift; sourceTree = "<group>"; };
+		580D7FB12EABF84900FC1F02 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		580D7FB42EAC068A00FC1F02 /* BadgeProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeProgressView.swift; sourceTree = "<group>"; };
+		580D7FB62EAC088A00FC1F02 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		580D7FB82EAC0C1600FC1F02 /* BadgeProgressMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeProgressMethods.swift; sourceTree = "<group>"; };
+		580D7FCE2EAC14E200FC1F02 /* WordsCollectedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsCollectedView.swift; sourceTree = "<group>"; };
 		587C1D882E3AAF0D00F50B7F /* WhatDaHuh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatDaHuh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		587C1D9C2E3AB58B00F50B7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		587C1D9D2E3AB58B00F50B7F /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
@@ -72,6 +88,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		580D7FAC2EABCCCC00FC1F02 /* Picker */ = {
+			isa = PBXGroup;
+			children = (
+				580D7FAD2EABCCEE00FC1F02 /* PickerOptionView.swift */,
+				580D7FAF2EABCE8400FC1F02 /* PickerParentView.swift */,
+			);
+			path = Picker;
+			sourceTree = "<group>";
+		};
+		580D7FB32EAC066100FC1F02 /* BagdeProgress */ = {
+			isa = PBXGroup;
+			children = (
+				580D7FB42EAC068A00FC1F02 /* BadgeProgressView.swift */,
+				580D7FB62EAC088A00FC1F02 /* ProgressBarView.swift */,
+				580D7FCE2EAC14E200FC1F02 /* WordsCollectedView.swift */,
+				580D7FB82EAC0C1600FC1F02 /* BadgeProgressMethods.swift */,
+			);
+			path = BagdeProgress;
+			sourceTree = "<group>";
+		};
 		587C1D7F2E3AAF0D00F50B7F = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +131,7 @@
 				587C1D9C2E3AB58B00F50B7F /* Assets.xcassets */,
 				587EC3AA2E3D29760010A7F3 /* WordListView */,
 				587EC3A72E3D29610010A7F3 /* WordView */,
+				580D7FB32EAC066100FC1F02 /* BagdeProgress */,
 				587EC3A62E3D29240010A7F3 /* Banks */,
 				587EC3A22E3D28EB0010A7F3 /* BadgeView */,
 				587EC39E2E3D28B40010A7F3 /* BadgeGrid */,
@@ -163,9 +200,11 @@
 		587EC3A72E3D29610010A7F3 /* WordView */ = {
 			isa = PBXGroup;
 			children = (
+				580D7FAC2EABCCCC00FC1F02 /* Picker */,
 				587C1DAD2E3AB70000F50B7F /* WordView.swift */,
+				580D7FB12EABF84900FC1F02 /* CardView.swift */,
+				580D7F922EABBEB400FC1F02 /* titleAndSoundView.swift */,
 				587EC3A82E3D296E0010A7F3 /* WordMethods.swift */,
-				580D7F8A2EAABBAA00FC1F02 /* PracticeWordView.swift */,
 			);
 			path = WordView;
 			sourceTree = "<group>";
@@ -184,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				58994EA32E43ABBF0029A2FE /* ButtonView.swift */,
+				580D7FAA2EABCC5C00FC1F02 /* CustomButtonView.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -266,21 +306,29 @@
 				587C1DA32E3AB58B00F50B7F /* Badge.swift in Sources */,
 				587EC39D2E3D28690010A7F3 /* ContentViewMethods.swift in Sources */,
 				587C1DA42E3AB58B00F50B7F /* ContentView.swift in Sources */,
+				580D7FAB2EABCC5C00FC1F02 /* CustomButtonView.swift in Sources */,
+				580D7FCF2EAC14E200FC1F02 /* WordsCollectedView.swift in Sources */,
 				587C1DB02E3AB71400F50B7F /* BadgeGridView.swift in Sources */,
 				587EC3A42E3D28FC0010A7F3 /* BadgeMethods.swift in Sources */,
+				580D7F932EABBEB400FC1F02 /* titleAndSoundView.swift in Sources */,
 				587EC3A02E3D28CC0010A7F3 /* BadgeGridMethods.swift in Sources */,
-				580D7F8B2EAABBAA00FC1F02 /* PracticeWordView.swift in Sources */,
 				58B2F16D2E575FE000F72F1C /* wordFoundTileView.swift in Sources */,
 				587EC3972E3D26210010A7F3 /* ViewModel.swift in Sources */,
 				587C1DB72E3AB9EE00F50B7F /* BadgeBank.swift in Sources */,
+				580D7FB72EAC088A00FC1F02 /* ProgressBarView.swift in Sources */,
+				580D7FB02EABCE8400FC1F02 /* PickerParentView.swift in Sources */,
+				580D7FB52EAC068A00FC1F02 /* BadgeProgressView.swift in Sources */,
 				587C1DAE2E3AB70000F50B7F /* WordView.swift in Sources */,
 				587C1DA52E3AB58B00F50B7F /* WhatDaHuhApp.swift in Sources */,
 				587C1DA62E3AB58B00F50B7F /* Word.swift in Sources */,
+				580D7FB92EAC0C1600FC1F02 /* BadgeProgressMethods.swift in Sources */,
+				580D7FAE2EABCCEE00FC1F02 /* PickerOptionView.swift in Sources */,
 				587C1DB22E3AB71C00F50B7F /* BadgeView.swift in Sources */,
 				587EC3AC2E3D29850010A7F3 /* WordListMethods.swift in Sources */,
 				587C1DAC2E3AB6EF00F50B7F /* WordListView.swift in Sources */,
 				587C1DAA2E3AB62200F50B7F /* WordBank.swift in Sources */,
 				587EC3A92E3D296E0010A7F3 /* WordMethods.swift in Sources */,
+				580D7FB22EABF84900FC1F02 /* CardView.swift in Sources */,
 				58994EA42E43ABBF0029A2FE /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

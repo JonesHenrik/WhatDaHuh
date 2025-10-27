@@ -10,7 +10,13 @@ import Foundation
 @Observable
 class ViewModel {
     /// A set of lowercased word titles that have been unlocked by the user.
-    var unlockedTitles: Set<String> = ["rizz"]
+    var unlockedTitles: Set<String> = ["rizz", "millennial pause", "gen z stare"]
+    
+    /// Stores the value of what is selected for the picker in the WordView
+    var definitionIsSelected = true
+    /// Stores the value of what is selected for the picker in the WordView
+    var exampleIsSelected = false
+    
     
     /// The file URL where the unlocked words are saved as a JSON array.
     let fileURL: URL = {
