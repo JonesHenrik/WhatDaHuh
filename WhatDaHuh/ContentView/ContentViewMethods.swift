@@ -26,19 +26,19 @@ extension ViewModel {
     ///
     /// - Note: Matching is case-insensitive and ignores leading/trailing whitespace.
     /// If no matching word is found, this method does nothing.
-    func processInput(_ input: String, from wordBank: [Word]) {
+    func processInput(_ input: String, from wordBank: [Word]) -> String {
         let trimmedInput = input.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
         
         guard let matchedWord = wordBank.first(where: { $0.title.lowercased() == trimmedInput }) else {
-            print("❌ No matching word found in wordBank.")
-            return
+            return("❌ No matching word found in wordBank.")
+            
         }
         
         if !unlockedTitles.contains(matchedWord.title.lowercased()) {
             unlock(word: matchedWord)
-            print("✅ Unlocked: \(matchedWord.title)")
+            return("✅ Unlocked: \(matchedWord.title)")
         } else {
-            print("🔓 Word already unlocked: \(matchedWord.title)")
+            return("🔓 Word already unlocked: \(matchedWord.title)")
         }
     }
     

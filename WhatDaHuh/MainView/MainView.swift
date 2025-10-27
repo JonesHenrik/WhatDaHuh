@@ -11,11 +11,7 @@ struct MainView: View {
     @Binding var vm: ViewModel
     
     var body: some View {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-            
+          Text("Submit words you have found/heard \nto find the definition and earn badges!")
                 .toolbar {
                     NavigationLink {
                         WordListView(vm: $vm)
@@ -42,3 +38,4 @@ struct MainView: View {
     MainView(vm: .constant(ViewModel()))
 
 }
+

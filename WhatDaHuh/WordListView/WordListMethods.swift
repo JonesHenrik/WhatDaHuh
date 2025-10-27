@@ -11,7 +11,7 @@ extension ViewModel {
     /// Returns a list of all unlocked words, sorted alphabetically from A to Z.
     ///
     /// This method filters the provided word bank to only include words whose titles
-    /// exist in the `unlockedWords` set. The resulting list is then sorted by title
+    /// exist in the `unlockedTitles` set. The resulting list is then sorted by title
     /// in ascending (A–Z) order.
     ///
     /// - Parameter wordBank: The full list of available `Word` objects.
@@ -75,6 +75,47 @@ extension ViewModel {
     }
     
     func stringToWord(for title: String) -> Word? {
-        return wordBank.first { $0.title.lowercased().trimmingCharacters(in: .whitespacesAndNewlines) == title.lowercased().trimmingCharacters(in: .whitespacesAndNewlines) }
+        return wordBank.first {
+            $0.title.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
+            == title.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
         }
+    }
+    
+    // MARK: - Badge title resolution for displaying words and gem indicators
+    
+    /// Normalizes a title for matching: lowercase, trimmed, with curly quotes converted to straight.
+    func normalizeTitle(_ raw: String) -> String {
+        let lowered = raw.lowercased().trimmingCharacters(in: .whitespacesAndNewlines)
+        // Replace common curly apostrophes/quotes with straight equivalents
+        let mapped = lowered
+            .replacingOccurrences(of: "’", with: "'")
+            .replacingOccurrences(of: "‘", with: "'")
+            .replacingOccurrences(of: "“", with: "\"")
+            .replacingOccurrences(of: "”", with: "\"")
+        return mapped
+    }
+    
+    /// Known variant spellings mapped to canonical WordBank titles (all matching done lowercased).
+    var variantMap: [String: String] {
+        [
+            "ashton hall": "aston hall",
+            "what da helly": "what the helly",
+            "roger nooo": "roger no",
+            "lip pillow": "lip pillows"
+            // Note: "don’t forget the bev" becomes "don't forget the bev" via normalizeTitle
+        ]
+    }
+    
+    /// Resolves a single badge string to a Word in the global wordBank, accounting for normalization and variants.
+    func resolveBadgeTitle(_ raw: String) -> Word? {
+        let norm = normalizeTitle(raw)
+        let canonical = variantMap[norm] ?? norm
+        return wordBank.first { normalizeTitle($0.title) == canonical }
+    }
+    
+    /// Resolves all words for a badge (preserving order), skipping any that cannot be matched.
+    func words(for badge: Badge, from wordBank: [Word]) -> [Word] {
+        badge.words.compactMap { resolveBadgeTitle($0) }
+    }
 }
+

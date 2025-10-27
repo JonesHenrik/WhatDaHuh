@@ -87,7 +87,7 @@ struct WordListView: View {
     }
 }
 
-//#Preview {
-//    WordListView()
+#Preview {
+    WordListView(vm: .constant(ViewModel()))
 
-//}
+}
