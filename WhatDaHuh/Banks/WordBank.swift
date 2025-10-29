@@ -8,7 +8,17 @@
 import Foundation
 
 // All gen z slang words will be stored as an array here
-
+func wordMatchingBadgeMatching(vocab: Word) -> Badge {
+    var returnedBadge = sampleBadge
+    for badge in badgeBank {
+        for word in badge.words {
+            if word == vocab.title {
+               returnedBadge = badge
+            }
+        }
+    }
+   return returnedBadge
+}
 let wordBank: [Word] = [
     Word(
         title: "rizz",
@@ -1165,7 +1175,7 @@ let wordBank: [Word] = [
             "He said pineapple doesn’t belong on pizza… Gen Z stare.",
             "Boss: You’re like family here. Me: Gen Z stare."
         ],
-        badge: sampleBadge,
+        badge: badgeBank[10],
         isLowkeyGem: false,
         isUnlocked: false
     ),

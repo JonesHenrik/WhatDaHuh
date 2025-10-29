@@ -12,6 +12,9 @@ struct MainView: View {
     
     var body: some View {
           Text("Submit words you have found/heard \nto find the definition and earn badges!")
+            .foregroundStyle(.text)
+            .font(.title2)
+            .padding()
                 .toolbar {
                     NavigationLink {
                         WordListView(vm: $vm)

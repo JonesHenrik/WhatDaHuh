@@ -10,13 +10,10 @@ import SwiftUI
 struct ContentView: View {
     @State var result = ""
     @State private var vm = ViewModel()
-    @State var text = ""
-   var newSampleBadge = Badge(
-        title: "Podium Talk",
-        imageName: "podiumTalk",
-        words: ["podium", "pop your shit", "clock it", "big ups", "shoaaaaa"], description: "main character energy and presence"
-    )
+    @State var text = "".lowercased()
+    @Environment(\.colorScheme) var colorScheme
     @State var isShowingAlert = false
+    
     var body: some View {
         NavigationStack {
             ZStack {
@@ -29,40 +26,33 @@ struct ContentView: View {
                         .position(x: geo.size.width / 2, y: geo.size.height / 1000)
                     VStack {
                         HStack {
-                            Image(systemName: "magnifyingglass")
+                            TextField("check slang here", text: $text)
+                                .textFieldStyle(.roundedBorder)
                                 .padding()
-                            TextField("Enter Word", text: $text)
-                                .padding()
-                            
                             Button {
                                 isShowingAlert.toggle()
-                               result = vm.processInput(text, from: wordBank)
+                                result = vm.processInput(text, from: wordBank)
+                                text = ""
                             } label: {
-                                Text("Submit")
+                                Text("submit")
                             }
                             .disabled(text == "" ? true : false)
                             .opacity(text == "" ? 0.4 : 1)
-                            .foregroundStyle(.text)
+                            .foregroundStyle(.white)
+                            .underline()
                             .padding()
                             
                         } .alert("\(result)", isPresented: $isShowingAlert) {
-                            Button("OK", role: .cancel) { }
+                            Button("OK", role: .cancel) {}
                         }
                         Spacer()
                         MainView(vm: $vm)
                         Spacer()
-                        HStack(spacing: 40){
-                            Image(newSampleBadge.imageName)
-                                .resizable()
-                                .scaledToFit()
-                             
-                            VStack {
-                                Text("\(newSampleBadge.title)")
-                                    .foregroundStyle(.text)
-                                Text("\("Progress bar")")
-                                
-                            }.padding(15)
-                        }
+//                        if vm.unlockedTitles.isEmpty {
+//                            BadgeProgressView(vm: $vm, badge: Badge(title: "badge name", imageName: "lockedBadge", words: [], description: ""))
+//                        } else {
+//                            BadgeProgressView(vm: $vm, badge: vm.mostRecentlyUnlockedWord(from: vm.unlockedTitles)?.badge ?? Badge(title: "badge name", imageName: "lockedBadge", words: [], description: ""))
+//                        }
                     }
                     
                 }

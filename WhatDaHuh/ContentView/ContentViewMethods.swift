@@ -42,16 +42,9 @@ extension ViewModel {
         }
     }
     
-    /// Returns the most recently unlocked `Word` from the provided word bank,
-    /// based on the order the titles were added to the unlockedWords set.
-    ///
-    /// - Parameter wordBank: The static list of all `Word` objects.
-    /// - Returns: The most recently unlocked `Word`, or `nil` if none match.
-    ///
-    /// - Note: This works based on the order in which the unlocked words are saved
-    /// to disk and assumes newer ones are appended last. If `Set` ordering is not reliable,
-    /// consider switching to a `[String]` to track order explicitly.
-    func mostRecentlyUnlockedWord(from wordBank: [Word]) -> Word? {
+    
+  
+    func mostRecentlyUnlockedWord(from wordBank: Set<String>) -> Word? {
         // Try loading ordered titles from file directly
         guard let data = try? Data(contentsOf: fileURL),
               let titles = try? JSONDecoder().decode([String].self, from: data),
@@ -59,6 +52,15 @@ extension ViewModel {
             return nil
         }
         
-        return wordBank.first { $0.title.lowercased() == latestTitle.lowercased() }
+        let wordBankArray = Array(wordBank)
+        if let recentWord = wordBankArray.last {
+            return stringToWord(for: recentWord)
+        } else {
+            fatalError("No word found boom")
+        }
+       
     }
+    
+   
+   
 }
