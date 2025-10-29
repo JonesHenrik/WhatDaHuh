@@ -12,7 +12,7 @@ import AVFoundation
 struct WordView: View {
     @Binding var vm: ViewModel
     let currentWord: Word
-    @ScaledMetric(relativeTo: .largeTitle) var imageSize = 400.0
+   // @ScaledMetric(relativeTo: .largeTitle) var imageSize = 400.0
     
     var cardTexts: [String] {
         switch vm.definitionIsSelected {
@@ -49,7 +49,7 @@ struct WordView: View {
                         }
                         .tabViewStyle(.page)
                         .padding()
-                        .frame(width: imageSize, height: 260)
+                       // .frame(width: imageSize, height: 260)
                         
                         Spacer()
                         

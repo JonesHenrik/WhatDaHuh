@@ -35,6 +35,7 @@
 		587EC3AC2E3D29850010A7F3 /* WordListMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587EC3AB2E3D29850010A7F3 /* WordListMethods.swift */; };
 		58994EA42E43ABBF0029A2FE /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58994EA32E43ABBF0029A2FE /* ButtonView.swift */; };
 		58B2F16D2E575FE000F72F1C /* wordFoundTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B2F16C2E575FE000F72F1C /* wordFoundTileView.swift */; };
+		A20E95102EB2A5240029948F /* NoCircleWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20E950F2EB2A5240029948F /* NoCircleWordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		587EC3AB2E3D29850010A7F3 /* WordListMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListMethods.swift; sourceTree = "<group>"; };
 		58994EA32E43ABBF0029A2FE /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		58B2F16C2E575FE000F72F1C /* wordFoundTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordFoundTileView.swift; sourceTree = "<group>"; };
+		A20E950F2EB2A5240029948F /* NoCircleWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoCircleWordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -202,6 +204,7 @@
 			children = (
 				580D7FAC2EABCCCC00FC1F02 /* Picker */,
 				587C1DAD2E3AB70000F50B7F /* WordView.swift */,
+				A20E950F2EB2A5240029948F /* NoCircleWordView.swift */,
 				580D7FB12EABF84900FC1F02 /* CardView.swift */,
 				580D7F922EABBEB400FC1F02 /* titleAndSoundView.swift */,
 				587EC3A82E3D296E0010A7F3 /* WordMethods.swift */,
@@ -323,6 +326,7 @@
 				587C1DA62E3AB58B00F50B7F /* Word.swift in Sources */,
 				580D7FB92EAC0C1600FC1F02 /* BadgeProgressMethods.swift in Sources */,
 				580D7FAE2EABCCEE00FC1F02 /* PickerOptionView.swift in Sources */,
+				A20E95102EB2A5240029948F /* NoCircleWordView.swift in Sources */,
 				587C1DB22E3AB71C00F50B7F /* BadgeView.swift in Sources */,
 				587EC3AC2E3D29850010A7F3 /* WordListMethods.swift in Sources */,
 				587C1DAC2E3AB6EF00F50B7F /* WordListView.swift in Sources */,

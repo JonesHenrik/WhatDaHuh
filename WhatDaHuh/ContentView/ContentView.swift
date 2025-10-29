@@ -45,16 +45,8 @@ struct ContentView: View {
                         } .alert("\(result)", isPresented: $isShowingAlert) {
                             Button("OK", role: .cancel) {}
                         }
-                        Spacer()
                         MainView(vm: $vm)
-                        Spacer()
-//                        if vm.unlockedTitles.isEmpty {
-//                            BadgeProgressView(vm: $vm, badge: Badge(title: "badge name", imageName: "lockedBadge", words: [], description: ""))
-//                        } else {
-//                            BadgeProgressView(vm: $vm, badge: vm.mostRecentlyUnlockedWord(from: vm.unlockedTitles)?.badge ?? Badge(title: "badge name", imageName: "lockedBadge", words: [], description: ""))
-//                        }
                     }
-                    
                 }
             }
         }
