@@ -15,4 +15,3 @@ struct Badge: Identifiable, Hashable {
     var description: String
 }
 
-let sampleBadge = Badge(title: "Sample", imageName: "sample", words: ["rizz", "no cap"], description: "Sample")

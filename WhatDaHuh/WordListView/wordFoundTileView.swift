@@ -59,7 +59,6 @@ struct wordFoundTileView: View {
             "He's got that unspoken rizz.",
             "You need better rizz if you're gonna talk to them."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ))

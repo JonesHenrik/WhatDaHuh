@@ -22,7 +22,6 @@ let wordBank: [Word] = [
             "He's got that unspoken rizz.",
             "You need better rizz if you're gonna talk to them."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -37,7 +36,6 @@ let wordBank: [Word] = [
             "I'm deadass not joking.",
             "Deadass, that was the best burger I've had."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -52,7 +50,6 @@ let wordBank: [Word] = [
             "That movie was amazing, on god.",
             "I'm gonna make it, on god."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -67,7 +64,6 @@ let wordBank: [Word] = [
             "Pour one out for my sleep schedule.",
             "He deleted the project—pour one out."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -82,7 +78,6 @@ let wordBank: [Word] = [
             "That’s fax no printer.",
             "You speaking straight facts—fax no printer."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -97,7 +92,6 @@ let wordBank: [Word] = [
             "You can't sit next to me with that fanum tax energy.",
             "He hit me with the fanum tax and took my fries."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -113,7 +107,6 @@ let wordBank: [Word] = [
             "That meal was goated.",
             "He's goated at Fortnite."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -128,7 +121,6 @@ let wordBank: [Word] = [
             "He switched sides, he's an opp now.",
             "Watch out for the opps in the comments."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -143,7 +135,6 @@ let wordBank: [Word] = [
             "If I return it, that’s free money — girl math.",
             "Girl math says this doesn't count because it was on sale."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -159,7 +150,6 @@ let wordBank: [Word] = [
             "He’s such a munch for her.",
             "Don’t be a munch. Play it cool."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -174,7 +164,6 @@ let wordBank: [Word] = [
             "We’re not dating — it’s a situationship.",
             "It started as a vibe and turned into a situationship."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -190,7 +179,6 @@ let wordBank: [Word] = [
             "He talking to five people — he for the streets.",
             "She’s acting wild—definitely for the streets."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -206,7 +194,6 @@ let wordBank: [Word] = [
             "Peep the drip.",
             "She walked in with max drip."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -222,7 +209,6 @@ let wordBank: [Word] = [
             "You see the fit? Mr. Put It On.",
             "They don’t miss — Mr. Put It On for real."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -237,7 +223,6 @@ let wordBank: [Word] = [
             "That burger was so mid.",
             "Everyone’s hyping it but it's just mid."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -252,7 +237,6 @@ let wordBank: [Word] = [
             "L take, you got ratioed.",
             "This post is begging for a ratio."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -267,7 +251,6 @@ let wordBank: [Word] = [
             "He bought her lunch again? Simp behavior.",
             "Don’t simp, have some self-respect!"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -282,7 +265,6 @@ let wordBank: [Word] = [
             "She ate that performance.",
             "You ate and left no crumbs."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -297,7 +279,6 @@ let wordBank: [Word] = [
             "I thought he liked me back… I was being delulu.",
             "Delulu is the solulu."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -312,7 +293,6 @@ let wordBank: [Word] = [
             "This is a perfect Skims dupe.",
             "Found a $10 dupe for the Dyson."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -328,7 +308,6 @@ let wordBank: [Word] = [
             "It’s giving main character.",
             "Your outfit is giving rich auntie."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -343,7 +322,6 @@ let wordBank: [Word] = [
             "The way he chews gave me the ick.",
             "Getting the ick is instant and irreversible."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -358,7 +336,6 @@ let wordBank: [Word] = [
             "What is he doing with that code? I dunno, let him cook.",
             "He started freestyling—let him cook!"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -373,7 +350,6 @@ let wordBank: [Word] = [
             "She’s so pressed over a comment.",
             "Why you pressed? It was just a joke."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -387,7 +363,6 @@ let wordBank: [Word] = [
         phrases: [
             "John watched his wife get fucked by another man. What a cuck!",
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -402,7 +377,6 @@ let wordBank: [Word] = [
         phrases: [
             "Baaakkkkaaaaa"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -416,7 +390,6 @@ let wordBank: [Word] = [
         phrases: [
             "I love how Rachel thinks she did something with a plain white shirt, chunky boots, skinny jeans, jacket, sunglasses, and a floppy hat. She's so cheugy."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -430,7 +403,6 @@ let wordBank: [Word] = [
         phrases: [
             "Gregory looks so good today, he is an absolute snack"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -445,7 +417,6 @@ let wordBank: [Word] = [
             "ugh I’ve missed so much what’s the tea sis?",
             "I heard some tea about Saturday night!"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -460,7 +431,6 @@ let wordBank: [Word] = [
             "Her Body Teaaa 😍",
             "Body tea goes crazy"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -475,7 +445,6 @@ let wordBank: [Word] = [
             "Ella May's face card is always valid, it never declines",
             "She is so beautiful, her face card is lethal"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -490,7 +459,6 @@ let wordBank: [Word] = [
             "Not gonna lie, your outfit is a serve. This is a serve.",
             "That girl was fierce. I know did you see her serve?"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -504,7 +472,6 @@ let wordBank: [Word] = [
         phrases: [
             "Cold tap water hits different at 3:00 am"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -519,7 +486,6 @@ let wordBank: [Word] = [
             "Damien's living rent free in your head, I can tell.",
             "Girl you living rent free in my head."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -533,7 +499,6 @@ let wordBank: [Word] = [
         phrases: [
             "That man's outfit is not it at all"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -548,7 +513,6 @@ let wordBank: [Word] = [
             "Look at her heels omg, she ate DOWN",
             "The choreo in Normani's new video ATE DOWN"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -563,7 +527,6 @@ let wordBank: [Word] = [
             "That girl can dance the house down.",
             "You are a diva the house down. (You are a diva!)"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -578,7 +541,6 @@ let wordBank: [Word] = [
             "while I'm on the air, big ups to my hoes in long beach",
             "big ups to mom!"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -593,7 +555,6 @@ let wordBank: [Word] = [
         phrases: [
             "Busta Rhymes was DOING THE MOST when he posed in a cell wearing a prison jumpsuit for his 'TheSource' magazine picture spread and article."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -607,7 +568,6 @@ let wordBank: [Word] = [
         phrases: [
             "Damn , did you see him ; he was 'something serious'!"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -621,7 +581,6 @@ let wordBank: [Word] = [
         phrases: [
             "She's got some junk in her trunk, GYAATT"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -635,7 +594,6 @@ let wordBank: [Word] = [
         phrases: [
             "I am totally shipping those two"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -649,7 +607,6 @@ let wordBank: [Word] = [
         phrases: [
             "yall are sleeping on..."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -663,7 +620,6 @@ let wordBank: [Word] = [
         phrases: [
             "Did you see her thirst trap, she is so fine!"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -678,7 +634,6 @@ let wordBank: [Word] = [
         phrases: [
             "poor dude over there i was mogging the fuck out of him"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -692,7 +647,6 @@ let wordBank: [Word] = [
         phrases: [
             "He was so salty after he died in smash bros"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -706,7 +660,6 @@ let wordBank: [Word] = [
         phrases: [
             "idk you figure out"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -721,7 +674,6 @@ let wordBank: [Word] = [
         phrases: [
             "Have you talked to Tom about when he worked on that cruise, he has crazy lore"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -735,7 +687,6 @@ let wordBank: [Word] = [
         phrases: [
             "A robot enter a bar. Bartender: Oi, get out ya clanker! Robot: (Sad Beep-Boop)"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -750,7 +701,6 @@ let wordBank: [Word] = [
             "That guy was totally 'dick riding' that rapper because he was hoping to get noticed.",
             "mfs be dick riding for clout and its sad"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -765,7 +715,6 @@ let wordBank: [Word] = [
             "girl dinner is so charcuterie core",
             "Just had a girl dinner, I had 4 grapes and butter noodles"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -779,7 +728,6 @@ let wordBank: [Word] = [
         phrases: [
             "thank you chat for the dono"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -793,7 +741,6 @@ let wordBank: [Word] = [
         phrases: [
             "'Fit Check ladiezzz' Emma flashed the mirror to the camera to show off her iced out coachella fit"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -807,7 +754,6 @@ let wordBank: [Word] = [
         phrases: [
             "Check out my OOTD!"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -822,7 +768,6 @@ let wordBank: [Word] = [
         phrases: [
             "Having a toxic partner in highschool is a canon event"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -836,7 +781,6 @@ let wordBank: [Word] = [
         phrases: [
             "My Roman Empire is the fact that my mom dated Ethan Hawke in college."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -850,7 +794,6 @@ let wordBank: [Word] = [
         phrases: [
             "I get great vibes from that song."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -864,7 +807,6 @@ let wordBank: [Word] = [
         phrases: [
             "YESSS KIANA!!!! GO OFFFFFF!!!"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -878,7 +820,6 @@ let wordBank: [Word] = [
         phrases: [
             "YESSS KIANA!!!! pop ur shit twin!"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -892,7 +833,6 @@ let wordBank: [Word] = [
         phrases: [
             "I just saw Ty eating sugar in the corner, definitely caught him in 4k"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -906,7 +846,6 @@ let wordBank: [Word] = [
         phrases: [
             "Did you see love island last night? That challenge was crazy #nicolandria"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -920,7 +859,6 @@ let wordBank: [Word] = [
         phrases: [
             "She did her big one last night"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -934,7 +872,6 @@ let wordBank: [Word] = [
         phrases: [
             "Synonyms: What the hellyanté? What the helly on? What the helly, Berry? What the helly, Burton? What the helly, 'Bron James? What the helly Cyrus? What the Fucky?"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -948,7 +885,6 @@ let wordBank: [Word] = [
         phrases: [
             "those acrylics are giving! purr!"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -962,7 +898,6 @@ let wordBank: [Word] = [
         phrases: [
             "those acrylics are giving! purr!"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -977,7 +912,6 @@ let wordBank: [Word] = [
         phrases: [
             "You better pay up your debt or we'll swiss cheese your place tonight."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -991,7 +925,6 @@ let wordBank: [Word] = [
         phrases: [
             "Did you forget the bev? Never never never"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -1005,7 +938,6 @@ let wordBank: [Word] = [
         phrases: [
             "ME: YO LEMME GET A CHOP CHEESE EXTRA BACON THE OCKY WAY. OCKY: SUREEE SUREEEEE. FIRST YOU GET THE THE HAMBURGER. THEN YOU TOAST THE BUN. THEN YOU TAKE THE MOZERALLA STICKS. THEN YOU ASSEMBLE. AFTER THEYRE READY YOU WRAP THEM UP. THE RESULTS. OMG. DONT FORGET THE BEV. NEVA NEVA NEVA"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -1019,7 +951,6 @@ let wordBank: [Word] = [
         phrases: [
             "ME: YO LEMME GET A CHOP CHEESE EXTRA BACON THE OCKY WAY. OCKY: SUREEE SUREEEEE."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -1033,7 +964,6 @@ let wordBank: [Word] = [
         phrases: [
             "ME: Tell mike to have his way with my sandwich 😫💦"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -1047,7 +977,6 @@ let wordBank: [Word] = [
         phrases: [
             "What the sigma"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -1061,7 +990,6 @@ let wordBank: [Word] = [
         phrases: [
             "*Drops ice cream cone* 'my sheilaaa'"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -1075,7 +1003,6 @@ let wordBank: [Word] = [
         phrases: [
             "'roger who did this to you ?! roger noooo'"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -1090,7 +1017,6 @@ let wordBank: [Word] = [
             "During the debate, Sarah completely took over the discussion and stood on the podium, asserting her opinions confidently.",
             "Bro got on the podium in the group chat and started calling everyone out."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -1105,7 +1031,6 @@ let wordBank: [Word] = [
             "Its not clocking to you that I am standing on business .",
             "Did you clock it? She was totally hinting she’s leaving the group."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -1120,7 +1045,6 @@ let wordBank: [Word] = [
             "We’re just chilling, playing games, type shit.” (we’re just hanging out, that kind of thing).",
             "She said she’s done with him, type shit.” (exactly that kind of situation)"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -1135,7 +1059,6 @@ let wordBank: [Word] = [
             "I ain’t lying, on fonem grave.” (I swear I’m telling the truth)",
             "On fonem grave, we really pulled up last night.” (I promise that really happened)"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -1150,7 +1073,6 @@ let wordBank: [Word] = [
             "He’s posting about women’s rights but treats his girlfriend like trash—performative male behavior.",
             "Bro buying flowers for his girlfriend and making sure Instagram sees it? That’s performative male 101."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -1165,7 +1087,6 @@ let wordBank: [Word] = [
             "He said pineapple doesn’t belong on pizza… Gen Z stare.",
             "Boss: You’re like family here. Me: Gen Z stare."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -1179,7 +1100,6 @@ let wordBank: [Word] = [
         phrases: [
             "That awkward two seconds before you say hi on camera… millennial pause energy."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -1194,7 +1114,6 @@ let wordBank: [Word] = [
             "She’s a full Disney adult — she has annual passes to both parks.",
             "We can’t go anywhere without her bringing up Disneyland… total Disney adult."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false,
     ),
@@ -1209,7 +1128,6 @@ let wordBank: [Word] = [
             "She’s a full Disney adult — she has annual passes to both parks.",
             "We can’t go anywhere without her bringing up Disneyland… total Disney adult."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -1224,7 +1142,6 @@ let wordBank: [Word] = [
             "He’s been farming followers with those thirst traps.",
             "Spent all night farming gold in the game."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false,
     ),
@@ -1239,7 +1156,6 @@ let wordBank: [Word] = [
             "He’s been gymmaxxing all summer — dude’s huge now.",
             "Skincare routine? I’m looksmaxxing hard rn."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false,
     ),
@@ -1254,7 +1170,6 @@ let wordBank: [Word] = [
             "His haircut is chopped.",
             "Outfit kinda chopped, ngl."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -1269,7 +1184,6 @@ let wordBank: [Word] = [
             "Lmao bro got that chopped chin.",
             "Not her coming for me with that chopped chin."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -1284,8 +1198,7 @@ let wordBank: [Word] = [
             "That’s some chopped shyt outfit right there.",
             "His car is chopped shyt, I swear."
          ],
-         badge: sampleBadge,
-         isLowkeyGem: false,
+          isLowkeyGem: false,
          isUnlocked: false
     ),
     Word(
@@ -1299,7 +1212,6 @@ let wordBank: [Word] = [
             "He’ll do anything for the huzz.",
             "“Where the huzz at?” (asking where the girls are)"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -1314,7 +1226,6 @@ let wordBank: [Word] = [
             "The bruzz are pulling up later.",
             "Just chilling with the bruzz."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -1329,7 +1240,6 @@ let wordBank: [Word] = [
             "Bro labeled her the chuzz of the party.",
             "She’s basically the chuzz of the group."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -1344,7 +1254,6 @@ let wordBank: [Word] = [
            "She’s a baddie, lil torta.",
            "She’s built like a torta."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -1359,7 +1268,6 @@ let wordBank: [Word] = [
             "This line PMO",
             "don't piss me off"
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -1374,7 +1282,6 @@ let wordBank: [Word] = [
             "SDIYBT, fam.",
             "He said ‘start digging in yo butt, twin’—so you know SDIYBT is next level."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -1389,7 +1296,6 @@ let wordBank: [Word] = [
             "SYBAU, nobody asked.",
             "Girl… SYBAU please."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -1404,7 +1310,6 @@ let wordBank: [Word] = [
             "Aah, that’s what you meant.",
             "Aah, lowkey feels good to finally understand."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -1419,7 +1324,6 @@ let wordBank: [Word] = [
             "That beat? Totally 67.",
             "Commenters kept spamming 67 under that video."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -1435,7 +1339,6 @@ let wordBank: [Word] = [
             "He’s not trying to be in the spotlight — total sigma.",
             "Sigma rule #45: Don’t chase, attract."
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -1451,7 +1354,6 @@ let wordBank: [Word] = [
             "Alpha male energy: ordering for the whole table without asking."
             
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
     ),
@@ -1467,7 +1369,6 @@ let wordBank: [Word] = [
             "They said I need to be a high‑value man before dating again."
             
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
         ),
@@ -1484,7 +1385,6 @@ let wordBank: [Word] = [
             "That guy journaling at 4 am? He laying the Ashton Hall."
             
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
         ),
@@ -1502,7 +1402,6 @@ let wordBank: [Word] = [
             "Not me talking to my friends like they’re chat"
             
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
         ),
@@ -1518,7 +1417,6 @@ let wordBank: [Word] = [
             "He been hitting back day for real, big back on him."
             
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
         ),
@@ -1535,7 +1433,6 @@ let wordBank: [Word] = [
             "Got my Penjamin Franklin for the party tonight."
             
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
         ),
@@ -1551,7 +1448,6 @@ let wordBank: [Word] = [
             "Too much filler — those lip pillows ain’t natural."
             
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
         ),
@@ -1567,7 +1463,6 @@ let wordBank: [Word] = [
             "let me get dat zynbabwe..."
             
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
         ),
@@ -1584,7 +1479,6 @@ let wordBank: [Word] = [
             "I’m on cart brain hours, can’t focus at all."
             
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false
         ),
@@ -1601,7 +1495,6 @@ let wordBank: [Word] = [
             "She’s stuck in her imaginationship again, texting a celeb who doesn’t even know she exists."
             
         ],
-        badge: sampleBadge,
         isLowkeyGem: false,
         isUnlocked: false)
 ]

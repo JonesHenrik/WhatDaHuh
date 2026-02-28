@@ -14,8 +14,10 @@ struct Word: Identifiable, Hashable {
     var phoneticSpelling: String
     var definitions: [String]
     var phrases: [String]
-    var badge: Badge
     var date = Date.now
+
+    /// Resolved from `wordToBadge` — `BadgeBank` is the single source of truth for membership.
+    var badge: Badge? { wordToBadge[title.lowercased()] }
     // rare in UI should appear as 'lowkey gem'
     var isLowkeyGem: Bool
     var isUnlocked: Bool

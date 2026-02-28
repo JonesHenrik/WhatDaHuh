@@ -88,7 +88,7 @@ let badgeBank: [Badge] = [
         Badge(
             title: "Meme Moments",
             imageName: "meme",
-            words: ["what da helly", "roger nooo"], description: "pop culture soundbites and edits"
+            words: ["what da helly", "roger nooo", "deadass"], description: "pop culture soundbites and edits"
         ),
         Badge(
             title: "Thirst Trap Cert",
@@ -111,3 +111,15 @@ let badgeBank: [Badge] = [
             words: ["slaps smacks", "bangs", "hits different", "bop"], description: "reactions to music/media/food"
         )
 ]
+
+/// Flat dictionary mapping each word title (lowercased) to its Badge.
+/// Built once from `badgeBank` — O(1) lookups everywhere.
+let wordToBadge: [String: Badge] = {
+    var dict: [String: Badge] = [:]
+    for badge in badgeBank {
+        for wordTitle in badge.words {
+            dict[wordTitle.lowercased()] = badge
+        }
+    }
+    return dict
+}()
