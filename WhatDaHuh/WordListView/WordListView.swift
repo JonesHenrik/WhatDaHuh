@@ -7,8 +7,22 @@
 
 import SwiftUI
 
+private enum SortMode {
+    case alphabetical, lowkeyGem, oldestFirst, recentFirst
+}
+
 struct WordListView: View {
     let vm: ViewModel
+    @State private var sortMode: SortMode = .alphabetical
+
+    private var displayedWords: [Word] {
+        switch sortMode {
+        case .alphabetical: vm.unlockedWordsAZ(from: wordBank)
+        case .lowkeyGem:    vm.unlockedLowkeyGemsAZ(from: wordBank)
+        case .oldestFirst:  vm.unlockedWordsOldestFirst(from: wordBank)
+        case .recentFirst:  vm.unlockedWordsRecentFirst(from: wordBank)
+        }
+    }
 
     var body: some View {
         VStack {
@@ -21,18 +35,16 @@ struct WordListView: View {
                                alignment: .top)
                         .position(x: geo.size.width / 2, y: geo.size.height / 10000)
                 }
-                if !vm.unlockedTitles.isEmpty {
+                if !displayedWords.isEmpty {
                     ScrollView {
-                        ForEach(Array(vm.unlockedTitles), id: \.self) { title in
-                            if let word = vm.stringToWord(for: title) {
-                                NavigationLink(destination: WordView(vm: vm, currentWord: word)) {
-                                    wordFoundTileView(foundWord: word)
-                                }
+                        ForEach(displayedWords) { word in
+                            NavigationLink(destination: WordView(vm: vm, currentWord: word)) {
+                                wordFoundTileView(foundWord: word)
                             }
                         }
-                    }                   
+                    }
                 } else {
-                    Text("words and definitions will appear here after submition!")
+                    Text("words and definitions will appear here after submission!")
                         .multilineTextAlignment(.center)
                 }
             }
@@ -47,22 +59,22 @@ struct WordListView: View {
             ToolbarItem(placement: .topBarTrailing) {
                 Menu {
                     Button {
-                        // Alphabetize
+                        sortMode = .alphabetical
                     } label: {
                         Text("alphabetize")
                     }
                     Button {
-                        // Lowkey gem
+                        sortMode = .lowkeyGem
                     } label: {
                         Text("lowkey gem 💎")
                     }
                     Button {
-                        // old to new
+                        sortMode = .oldestFirst
                     } label: {
                         Text("boomer 👴 to alpha 👶")
                     }
                     Button {
-                        // new to old
+                        sortMode = .recentFirst
                     } label: {
                         Text("alpha 👶 to boomer 👴")
                     }
