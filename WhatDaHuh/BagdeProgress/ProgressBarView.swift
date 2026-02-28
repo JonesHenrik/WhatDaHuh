@@ -31,9 +31,5 @@ struct ProgressBarView: View {
 }
 
 #Preview {
-    ProgressBarView(vm: ViewModel(), badge: Badge(
-        title: "Glitches",
-        imageName: "glitches",
-        words: ["millennial pause", "gen z stare", "we outside", "sending me", "not it"],
-        description: "Sample"))
+    ProgressBarView(vm: ViewModel(), badge: Badge.previewGlitches)
 }

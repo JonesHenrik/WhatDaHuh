@@ -22,9 +22,5 @@ struct WordsCollectedView: View {
 }
 
 #Preview {
-    WordsCollectedView(vm: ViewModel(), badge: Badge(
-        title: "Glitches",
-        imageName: "glitches",
-        words: ["millennial pause", "gen z stare", "we outside", "sending me", "not it"],
-        description: "Sample"))
+    WordsCollectedView(vm: ViewModel(), badge: .previewGlitches)
 }

@@ -25,15 +25,12 @@ struct WordListView: View {
                     ScrollView {
                         ForEach(Array(vm.unlockedTitles), id: \.self) { title in
                             if let word = vm.stringToWord(for: title) {
-                                NavigationLink(value: word) {
+                                NavigationLink(destination: WordView(vm: vm, currentWord: word)) {
                                     wordFoundTileView(foundWord: word)
                                 }
                             }
                         }
-                    }
-                    .navigationDestination(for: Word.self) { word in
-                        WordView(vm: vm, currentWord: word)
-                    }
+                    }                   
                 } else {
                     Text("words and definitions will appear here after submition!")
                         .multilineTextAlignment(.center)

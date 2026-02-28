@@ -63,19 +63,5 @@ struct WordView: View {
 }
 
 #Preview {
-    WordView(vm: ViewModel(), currentWord: Word(
-        title: "rizz",
-        wordClass: "noun",
-        phoneticSpelling: "riz",
-        definitions: [
-            "Charisma or charm, especially in romantic situations.",
-            "The ability to attract or flirt effectively."
-        ],
-        phrases: [
-            "He's got that unspoken rizz.",
-            "You need better rizz if you're gonna talk to them."
-        ],
-        isLowkeyGem: false,
-        isUnlocked: false
-    ))
+    WordView(vm: ViewModel(), currentWord: .previewRizz)
 }

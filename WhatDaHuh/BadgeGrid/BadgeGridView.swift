@@ -17,7 +17,7 @@ struct BadgeGridView: View {
         ScrollView {
             LazyVGrid(columns: columns, spacing: 20) {
                 ForEach(badgeBank) { badge in
-                    NavigationLink(value: badge) {
+                    NavigationLink(destination: BadgeView(currentBadge: badge)) {
                         Image(badge.imageName)
                             .resizable()
                             .scaledToFit()
@@ -26,9 +26,9 @@ struct BadgeGridView: View {
             }
             .padding(.horizontal)
         }
-        .navigationDestination(for: Badge.self) { badge in
-            BadgeView(currentBadge: badge)
-        }
+//        .navigationDestination(for: Badge.self) { badge in
+//            BadgeView(currentBadge: badge)
+//        }
         .toolbar {
             ToolbarItem(placement: .principal) {
                 Text("badges")
