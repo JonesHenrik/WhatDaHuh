@@ -12,7 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         NavigationStack {
-            MainView(vm: $vm)
+            MainView(vm: vm)
         }
     }
 }

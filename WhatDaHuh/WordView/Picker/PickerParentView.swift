@@ -8,34 +8,30 @@
 import SwiftUI
 
 struct PickerParentView: View {
-    @Binding var vm: ViewModel
+    let vm: ViewModel
+
     var body: some View {
         HStack(spacing: -10) {
             Button {
-                vm.definitionIsSelected = true
-                vm.exampleIsSelected = false
-                // show array of string for definitions
+                vm.selectedMode = .definition
             } label: {
-                PickerOptionView(vm: $vm, isSelected: vm.definitionIsSelected, text: "definition")
+                PickerOptionView(vm: vm, isSelected: vm.selectedMode == .definition, text: "definition")
             }
-            
+
             Button {
-                vm.exampleIsSelected = true
-                vm.definitionIsSelected = false
-                // show array of string for examples
+                vm.selectedMode = .example
             } label: {
-                PickerOptionView(vm: $vm, isSelected: vm.exampleIsSelected, text: "example")
+                PickerOptionView(vm: vm, isSelected: vm.selectedMode == .example, text: "example")
             }
-            
         }
         .background(
             Capsule()
-            .foregroundStyle(Color(.pickerUnselected))
+                .foregroundStyle(Color(.pickerUnselected))
         )
         .safeAreaPadding()
     }
 }
 
 #Preview {
-    PickerParentView(vm: .constant(ViewModel()))
+    PickerParentView(vm: ViewModel())
 }

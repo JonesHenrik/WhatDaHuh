@@ -10,55 +10,53 @@ import SwiftUI
 struct BadgeView: View {
     @Environment(\.colorScheme) var colorScheme
     let currentBadge: Badge
+
     var body: some View {
-        NavigationStack {
-            VStack {
-                currentBadge.image
-                    .resizable()
-                    .scaledToFit()
-                    .shadow(color: Color("shadow") ,radius: 5, x: 0, y: 15)
+        VStack {
+            Image(currentBadge.imageName)
+                .resizable()
+                .scaledToFit()
+                .shadow(color: Color("shadow"), radius: 5, x: 0, y: 15)
+                .padding()
+            Text(currentBadge.description)
+                .font(.body)
+                .italic()
+                .padding(.bottom)
+            ZStack {
+                GeometryReader { geo in
+                    Circle()
+                        .foregroundStyle(Color.background)
+                        .frame(width: geo.size.width * 2.0,
+                               height: geo.size.width * 1.6,
+                               alignment: .bottom)
+                        .position(x: geo.size.width / 2, y: geo.size.height)
+
+                    List(currentBadge.words, id: \.self) { word in
+                        Text(word)
+                            .font(.title2)
+                    }
+                    .scrollContentBackground(.hidden)
+                    .scrollDisabled(true)
                     .padding()
-                Text(currentBadge.description)
-                    .font(.body)
-                    .italic()
-                    .padding(.bottom)
-                ZStack {
-                    GeometryReader { geo in
-                        Circle()
-                            .foregroundStyle(Color.background)
-                            .frame(width: geo.size.width * 2.0,
-                                   height: geo.size.width * 1.6,
-                                   alignment: .bottom)
-                            .position(x: geo.size.width / 2, y: geo.size.height)
-                        
-                        List(currentBadge.words, id: \.self) { word in
-                            Text(word)
-                                .font(.title2)
-                        }
-                        .scrollContentBackground(.hidden)
-                        .scrollDisabled(true)
-                        .padding()
-                       
-                        .frame(width: geo.size.width * 0.9, height: geo.size.height * 1.4)
-                        .position(x: geo.size.width / 2, y: geo.size.height / 1.4)
-                        
-                    }
+                    .frame(width: geo.size.width * 0.9, height: geo.size.height * 1.4)
+                    .position(x: geo.size.width / 2, y: geo.size.height / 1.4)
                 }
-                .toolbar {
-                    ToolbarItem(placement: .principal) {
-                        Text("badges")
-                            .font(.largeTitle)
-                            .accessibilityLabel("badges")
-                    }
-                    ToolbarItem(placement: .topBarTrailing) {
-                        Image(systemName: "square.and.arrow.up")
-                            .accessibilityLabel("Share badge")
-                    }
-                }
+            }
+        }
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                Text("badges")
+                    .font(.largeTitle)
+                    .accessibilityLabel("badges")
+            }
+            ToolbarItem(placement: .topBarTrailing) {
+                Image(systemName: "square.and.arrow.up")
+                    .accessibilityLabel("Share badge")
             }
         }
     }
 }
+
 #Preview {
     BadgeView(currentBadge: Badge(title: "Certified W", imageName: "cloutCollector", words: ["rizz", "goated", "tuff", "w", "hits"], description: "Compliments, wins, and hype"))
 }

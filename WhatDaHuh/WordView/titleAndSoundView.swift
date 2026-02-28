@@ -8,11 +8,10 @@
 import SwiftUI
 import AVFoundation
 
-
 struct titleAndSoundView: View {
-    @Binding var vm: ViewModel
-    
+    let vm: ViewModel
     let word: Word
+
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
@@ -22,7 +21,6 @@ struct titleAndSoundView: View {
                     Text("(\(word.wordClass))")
                         .font(.body)
                 }
-                
                 Text(word.phoneticSpelling)
                     .font(.body)
             }
@@ -40,7 +38,7 @@ struct titleAndSoundView: View {
 }
 
 #Preview {
-    titleAndSoundView(vm: .constant(ViewModel()), word: Word(
+    titleAndSoundView(vm: ViewModel(), word: Word(
         title: "rizz",
         wordClass: "noun",
         phoneticSpelling: "riz",

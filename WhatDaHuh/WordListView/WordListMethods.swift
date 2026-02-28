@@ -46,30 +46,17 @@ extension ViewModel {
     /// - Parameter wordBank: The full list of available `Word` objects.
     /// - Returns: An array of unlocked `Word`s in the order they were unlocked, from oldest to newest.
     func unlockedWordsOldestFirst(from wordBank: [Word]) -> [Word] {
-        guard let data = try? Data(contentsOf: fileURL),
-              let titles = try? JSONDecoder().decode([String].self, from: data) else {
-            return []
-        }
-
-        return titles.compactMap { title in
+        unlockedOrder.compactMap { title in
             wordBank.first { $0.title.lowercased() == title.lowercased() }
         }
     }
 
     /// Returns a list of unlocked words in reverse unlock order (most recently unlocked first).
     ///
-    /// This method reads the saved list of unlocked word titles from file storage and finds
-    /// the corresponding `Word` objects from the word bank in reverse unlock order.
-    ///
     /// - Parameter wordBank: The full list of available `Word` objects.
     /// - Returns: An array of unlocked `Word`s sorted from most recently unlocked to oldest.
     func unlockedWordsRecentFirst(from wordBank: [Word]) -> [Word] {
-        guard let data = try? Data(contentsOf: fileURL),
-              let titles = try? JSONDecoder().decode([String].self, from: data) else {
-            return []
-        }
-
-        return titles.reversed().compactMap { title in
+        unlockedOrder.reversed().compactMap { title in
             wordBank.first { $0.title.lowercased() == title.lowercased() }
         }
     }
