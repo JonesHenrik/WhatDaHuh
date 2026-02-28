@@ -52,13 +52,7 @@ extension ViewModel {
     /// to disk and assumes newer ones are appended last. If `Set` ordering is not reliable,
     /// consider switching to a `[String]` to track order explicitly.
     func mostRecentlyUnlockedWord(from wordBank: [Word]) -> Word? {
-        // Try loading ordered titles from file directly
-        guard let data = try? Data(contentsOf: fileURL),
-              let titles = try? JSONDecoder().decode([String].self, from: data),
-              let latestTitle = titles.last else {
-            return nil
-        }
-        
+        guard let latestTitle = unlockedOrder.last else { return nil }
         return wordBank.first { $0.title.lowercased() == latestTitle.lowercased() }
     }
 }

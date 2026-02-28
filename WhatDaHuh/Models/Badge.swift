@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SwiftUI
 
 struct Badge: Identifiable, Hashable {
     let id = UUID()
@@ -14,10 +13,6 @@ struct Badge: Identifiable, Hashable {
     var imageName: String
     var words: [String]
     var description: String
-    
-    var image: Image {
-            Image(imageName)
-        }
 }
 
-var sampleBadge = Badge(title: "Sample", imageName: "sample", words: ["rizz", "no cap"], description: "Sample")
+let sampleBadge = Badge(title: "Sample", imageName: "sample", words: ["rizz", "no cap"], description: "Sample")
