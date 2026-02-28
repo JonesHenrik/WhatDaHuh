@@ -23,17 +23,16 @@ struct WordListView: View {
                 }
                 if !vm.unlockedTitles.isEmpty {
                     ScrollView {
-                        ForEach(Array(vm.unlockedTitles), id: \.self) { word in
-                            NavigationLink {
-                                if let newWord = vm.stringToWord(for: word) {
-                                    WordView(vm: vm, currentWord: newWord)
-                                }
-                            } label: {
-                                if let newWord = vm.stringToWord(for: word) {
-                                    wordFoundTileView(foundWord: newWord)
+                        ForEach(Array(vm.unlockedTitles), id: \.self) { title in
+                            if let word = vm.stringToWord(for: title) {
+                                NavigationLink(value: word) {
+                                    wordFoundTileView(foundWord: word)
                                 }
                             }
                         }
+                    }
+                    .navigationDestination(for: Word.self) { word in
+                        WordView(vm: vm, currentWord: word)
                     }
                 } else {
                     Text("words and definitions will appear here after submition!")
