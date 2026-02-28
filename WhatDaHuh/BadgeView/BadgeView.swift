@@ -58,5 +58,5 @@ struct BadgeView: View {
 }
 
 #Preview {
-    BadgeView(currentBadge: Badge(title: "Certified W", imageName: "cloutCollector", words: ["rizz", "goated", "tuff", "w", "hits"], description: "Compliments, wins, and hype"))
+    BadgeView(currentBadge: .previewCertifiedW)
 }

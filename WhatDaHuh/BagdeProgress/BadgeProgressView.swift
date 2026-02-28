@@ -30,9 +30,5 @@ struct BadgeProgressView: View {
 }
 
 #Preview {
-    BadgeProgressView(vm: ViewModel(), badge: Badge(
-        title: "Glitches",
-        imageName: "glitches",
-        words: ["millennial pause", "gen z stare", "we outside", "sending me", "not it"],
-        description: "Sample"))
+    BadgeProgressView(vm: ViewModel(), badge: .previewGlitches)
 }
