@@ -52,7 +52,9 @@ struct WordView: View {
 
                 Spacer()
 
-                BadgeProgressView(vm: vm, badge: currentWord.badge)
+                if let badge = currentWord.badge {
+                    BadgeProgressView(vm: vm, badge: badge)
+                }
 
                 Text("word learned: \(currentWord.date, format: .dateTime.day().month().year())")
             }
@@ -73,12 +75,6 @@ struct WordView: View {
             "He's got that unspoken rizz.",
             "You need better rizz if you're gonna talk to them."
         ],
-        badge: Badge(
-            title: "Glitches",
-            imageName: "glitches",
-            words: ["millennial pause", "gen z stare", "we outside", "sending me", "not it"],
-            description: "mannerisms and ironic detachment"
-        ),
         isLowkeyGem: false,
         isUnlocked: false
     ))
