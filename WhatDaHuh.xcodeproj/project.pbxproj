@@ -38,6 +38,16 @@
 		58B2F16D2E575FE000F72F1C /* wordFoundTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B2F16C2E575FE000F72F1C /* wordFoundTileView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		58C4ECAD2F53B736000B0186 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 587C1D802E3AAF0D00F50B7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 587C1D872E3AAF0D00F50B7F;
+			remoteInfo = WhatDaHuh;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		580D7F922EABBEB400FC1F02 /* titleAndSoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = titleAndSoundView.swift; sourceTree = "<group>"; };
 		580D7FAA2EABCC5C00FC1F02 /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
@@ -69,6 +79,7 @@
 		587EC3AB2E3D29850010A7F3 /* WordListMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListMethods.swift; sourceTree = "<group>"; };
 		58994EA32E43ABBF0029A2FE /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		58B2F16C2E575FE000F72F1C /* wordFoundTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordFoundTileView.swift; sourceTree = "<group>"; };
+		58C4ECA92F53B736000B0186 /* WhatDaHuhTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatDaHuhTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -77,10 +88,22 @@
 			path = MainView;
 			sourceTree = "<group>";
 		};
+		58C4ECAA2F53B736000B0186 /* WhatDaHuhTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = WhatDaHuhTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		587C1D852E3AAF0D00F50B7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58C4ECA62F53B736000B0186 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -114,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				587C1DA12E3AB58B00F50B7F /* WhatDaHuh */,
+				58C4ECAA2F53B736000B0186 /* WhatDaHuhTests */,
 				587C1D892E3AAF0D00F50B7F /* Products */,
 				58994EA22E43ABAF0029A2FE /* Button */,
 			);
@@ -123,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				587C1D882E3AAF0D00F50B7F /* WhatDaHuh.app */,
+				58C4ECA92F53B736000B0186 /* WhatDaHuhTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -256,6 +281,29 @@
 			productReference = 587C1D882E3AAF0D00F50B7F /* WhatDaHuh.app */;
 			productType = "com.apple.product-type.application";
 		};
+		58C4ECA82F53B736000B0186 /* WhatDaHuhTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58C4ECB12F53B736000B0186 /* Build configuration list for PBXNativeTarget "WhatDaHuhTests" */;
+			buildPhases = (
+				58C4ECA52F53B736000B0186 /* Sources */,
+				58C4ECA62F53B736000B0186 /* Frameworks */,
+				58C4ECA72F53B736000B0186 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58C4ECAE2F53B736000B0186 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				58C4ECAA2F53B736000B0186 /* WhatDaHuhTests */,
+			);
+			name = WhatDaHuhTests;
+			packageProductDependencies = (
+			);
+			productName = WhatDaHuhTests;
+			productReference = 58C4ECA92F53B736000B0186 /* WhatDaHuhTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -263,11 +311,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1630;
+				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					587C1D872E3AAF0D00F50B7F = {
 						CreatedOnToolsVersion = 16.3;
+					};
+					58C4ECA82F53B736000B0186 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 587C1D872E3AAF0D00F50B7F;
 					};
 				};
 			};
@@ -286,6 +338,7 @@
 			projectRoot = "";
 			targets = (
 				587C1D872E3AAF0D00F50B7F /* WhatDaHuh */,
+				58C4ECA82F53B736000B0186 /* WhatDaHuhTests */,
 			);
 		};
 /* End PBXProject section */
@@ -296,6 +349,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				587C1DA22E3AB58B00F50B7F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58C4ECA72F53B736000B0186 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,7 +397,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		58C4ECA52F53B736000B0186 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		58C4ECAE2F53B736000B0186 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 587C1D872E3AAF0D00F50B7F /* WhatDaHuh */;
+			targetProxy = 58C4ECAD2F53B736000B0186 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		587C1D912E3AAF0E00F50B7F /* Debug */ = {
@@ -519,6 +594,50 @@
 			};
 			name = Release;
 		};
+		58C4ECAF2F53B736000B0186 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8K6C7ZB947;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.henrikjones.WhatDaHuhTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhatDaHuh.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WhatDaHuh";
+			};
+			name = Debug;
+		};
+		58C4ECB02F53B736000B0186 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8K6C7ZB947;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.henrikjones.WhatDaHuhTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhatDaHuh.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WhatDaHuh";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -536,6 +655,15 @@
 			buildConfigurations = (
 				587C1D942E3AAF0E00F50B7F /* Debug */,
 				587C1D952E3AAF0E00F50B7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58C4ECB12F53B736000B0186 /* Build configuration list for PBXNativeTarget "WhatDaHuhTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58C4ECAF2F53B736000B0186 /* Debug */,
+				58C4ECB02F53B736000B0186 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

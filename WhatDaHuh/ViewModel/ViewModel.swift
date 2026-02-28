@@ -26,13 +26,19 @@ class ViewModel {
     var unlockedOrder: [String] = []
 
     /// The file URL where the unlocked words are saved as a JSON array.
-    let fileURL: URL = {
-        FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-            .appendingPathComponent("unlockedWords.json")
-    }()
+    let fileURL: URL
 
-    /// Initializes the model and attempts to load unlocked words from disk.
+    /// Initializes the model using the app's Documents directory for persistence.
     init() {
+        self.fileURL = URL.documentsDirectory.appending(path: "unlockedWords.json")
+        loadUnlockedWords()
+    }
+
+    /// Initializes the model with a custom persistence URL.
+    /// Use this in unit tests to write to a temporary location
+    /// instead of the real Documents directory.
+    init(fileURL: URL) {
+        self.fileURL = fileURL
         loadUnlockedWords()
     }
 
